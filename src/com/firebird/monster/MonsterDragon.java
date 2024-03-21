@@ -31,5 +31,24 @@ public class MonsterDragon extends SimpleType {
         }
     }
 
-    // 기존 MonsterDragon 클래스의 나머지 부분은 동일하게 유지
+    // 브래스 사용 메소드
+    public void useBreath(MonsterDragon target) {
+        if (!isBreathUsed) {
+            int damage = (int) (this.AD_M * 1.5); // 기본 공격력의 150%로 계산
+            target.HP_M -= damage;
+            isBreathUsed = true; // 브래스 사용 상태로 변경
+            System.out.println("드래곤이 브래스를 사용하여 " + damage + "의 피해를 입혔습니다.");
+            // 브래스 사용 후 특별한 행동이나 상태 변화가 필요하다면 여기에 추가
+        } else {
+            System.out.println("브래스는 이미 사용되었습니다.");
+        }
+    }
+
+    // 드래곤의 HP가 절반 이하일 때와 이상일 때의 데미지 처리를 위한 메소드
+    public void takeDamage(int damage) {
+        if (this.HP_M > this.HP_M / 2) {
+            damage /= 2; // HP가 절반 이상일 때는 받는 데미지를 반으로 줄임
+        }
+        this.HP_M -= damage;
+    }
 }
