@@ -6,7 +6,7 @@ public class CharacterSelection {
         public CharacterSelection(int HP_C, int AD_C, int DF_C, int LV_C) {
         }
 
-        public static Character selectionChar() {
+        public static character selectionChar() {
             Scanner sc = new Scanner(System.in);
 
             System.out.println("******************************");
