@@ -20,7 +20,7 @@ public class SimpleMonsterType {
         this.AD_M = AD_M;
         this.DF_M = DF_M;
         this.LV_M = LV_M;
-        this.coin = new Random().nextInt(5) + 1;
+        this.coin = new Random().nextInt(5) + 1;        //1~5 사이의 난수 발생
     }
 
     public void setName_M(String name_M){
@@ -31,42 +31,34 @@ public class SimpleMonsterType {
         return name_M;
     }
 
-    // HP_M에 대한 getter
     public int getHP_M() {
         return HP_M;
     }
 
-    // HP_M에 대한 setter
     public void setHP_M(int HP_M) {
         this.HP_M = HP_M;
     }
 
-    // AD_M에 대한 getter
     public int getAD_M() {
         return AD_M;
     }
 
-    // AD_M에 대한 setter
     public void setAD_M(int AD_M) {
         this.AD_M = AD_M;
     }
 
-    // DF_M에 대한 getter
     public int getDF_M() {
         return DF_M;
     }
 
-    // DF_M에 대한 setter
     public void setDF_M(int DF_M) {
         this.DF_M = DF_M;
     }
 
-    // LV_M에 대한 getter
     public int getLV_M() {
         return LV_M;
     }
 
-    // LV_M에 대한 setter
     public void setLV_M(int LV_M) {
         this.LV_M = LV_M;
     }
@@ -80,4 +72,3 @@ public class SimpleMonsterType {
     }
 }
 
-//몬스터 처치시 드롭되는 코인의 양을 랜덤성으로 지정해서 드롭되게 설정하기
