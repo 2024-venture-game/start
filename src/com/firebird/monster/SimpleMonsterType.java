@@ -1,21 +1,26 @@
 package com.firebird.monster;
 
-public class SimpleType {
+import java.util.Random;
+
+public class SimpleMonsterType {
 
     private String name_M;
     private int HP_M;       // 체력
     private int AD_M;          // 공격력
     private int DF_M;         // 방어력
     private int LV_M;        // 레벨
+    private int coin;           //드랍 코인
+
 
 
     // 생성자
-    public SimpleType(String name_M, int HP_M, int AD_M, int DF_M, int LV_M) {
+    public SimpleMonsterType(String name_M, int HP_M, int AD_M, int DF_M, int LV_M) {
         this.name_M = name_M;
         this.HP_M = HP_M;
         this.AD_M = AD_M;
         this.DF_M = DF_M;
         this.LV_M = LV_M;
+        this.coin = new Random().nextInt(5) + 1;
     }
 
     public void setName_M(String name_M){
@@ -65,4 +70,14 @@ public class SimpleType {
     public void setLV_M(int LV_M) {
         this.LV_M = LV_M;
     }
+
+    public int getCoin() {
+        return coin;
+    }
+
+    public void setCoin(int coin) {
+        this.coin = coin;
+    }
 }
+
+//몬스터 처치시 드롭되는 코인의 양을 랜덤성으로 지정해서 드롭되게 설정하기
