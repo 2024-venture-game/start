@@ -19,14 +19,15 @@ public class MonsterInfomation {
         MS[2] = new MonsterSkill("스킬3", 300, 0);
 
 
-        //밑에 스킬 값이 null인지 확인하기 위한 for문
-        for (MonsterSkill skill : MS) {
-            if (skill != null) {
-                System.out.println(skill.getSkillName() + ": " + skill.getSkillDamage());
-            } else {
-                System.out.println("스킬이 null입니다.");
-            }
-        }
+//        //밑에 스킬 값이 null인지 확인하기 위한 for문
+//        for (MonsterSkill skill : MS) {
+//            if (skill != null) {
+//                System.out.println(skill.getSkillName() + ": " + skill.getSkillDamage());
+//            } else {
+//                System.out.println("스킬이 null입니다.");
+//            }
+//        }
+
 
     }
 
