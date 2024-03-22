@@ -11,4 +11,12 @@ public class MonsterInfomation {
 
     }
 
+    public void kindOfSkill(){
+        MonsterSkill[] MS = new MonsterSkill[3];
+        MS[0] = new MonsterSkill("스킬1", 100, 0);
+        MS[1] = new MonsterSkill("스킬2", 200, 50);
+        MS[2] = new MonsterSkill("스킬3", 300, 0);
+
+    }
+
 }
