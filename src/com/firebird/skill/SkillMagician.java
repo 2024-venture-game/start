@@ -1,5 +1,7 @@
 package com.firebird.skill;
 
+import java.util.Scanner;
+
 public class SkillMagician {
 
     /*[캐릭터2] 마법사(여자) - 마법
@@ -25,5 +27,26 @@ public class SkillMagician {
         return characterSkills;
     }
 
+    //공격 메소드
+    public void attack(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("===== 마법사의 스킬 =====");
+        System.out.println("1. 얼음 마법 공격");
+        System.out.println("2. 번개 마법 공격");
+        System.out.println("3. 불 마법 공격");
+        System.out.print("사용할 공격 번호를 입력하세요 : ");
+        int num = sc.nextInt();
+
+        if(num == 1) {
+            //hp = hp - characterSkills[0].skill_damage_C;
+
+        } else if(num == 2) {
+            //hp = hp - characterSkills[1].skill_damage_C;
+
+        }else if(num == 3) {
+            //hp = hp - characterSkills[2].skill_damage_C;
+
+        }
+    }
 
 }
