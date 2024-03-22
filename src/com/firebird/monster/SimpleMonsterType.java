@@ -23,6 +23,10 @@ public class SimpleMonsterType {
         this.coin = new Random().nextInt(5) + 1;        //1~5 사이의 난수 발생
     }
 
+    public SimpleMonsterType() {
+
+    }
+
     public void setName_M(String name_M){
         this.name_M = name_M;
     }
