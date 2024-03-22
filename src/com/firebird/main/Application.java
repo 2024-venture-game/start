@@ -20,21 +20,27 @@ public class Application {
         if(num == 1) {
 
             System.out.println("검사가 선택되었습니다.");
+
         } else if(num == 2) {
 
             System.out.println("마법사가 선택되었습니다.");
+
         } else if(num == 3) {
 
             System.out.println("궁수가 선택되었습니다.");
+
         } else if(num == 4) {
 
             System.out.println("도적이 선택되었습니다.");
+
         } else {
 
             System.out.println("다시 선택해주십시오.");
+
         }
 
         System.out.println("정말 이 캐릭터로 선택하시겠습니까?");
+
     }
 
 }
