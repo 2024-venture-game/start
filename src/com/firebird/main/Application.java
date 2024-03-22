@@ -3,6 +3,7 @@ package com.firebird.main;
 import com.firebird.monster.MonsterInfomation;
 import com.firebird.monster.MonsterSkill;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Application {
@@ -14,9 +15,13 @@ public class Application {
 
         // 스킬 정보 출력
         MonsterSkill[] skills = monsterInformation.getMonsterSkills();
-        System.out.print("사용할 스킬 번호 입력 : ");
-        Scanner sc = new Scanner(System.in);
-        int i = sc.nextInt();
+
+        Random random = new Random();
+
+        int i = random.nextInt(skills.length);
+//        System.out.print("사용할 스킬 번호 입력 : ");
+//        Scanner sc = new Scanner(System.in);
+//        int i = sc.nextInt();
         if (skills[i] != null) {
             System.out.println(skills[i - 1].getSkillName() + "로 " + skills[i - 1].getSkillDamage() + "데미지를 주었습니다.");
         } else {
