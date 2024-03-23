@@ -2,6 +2,7 @@ package com.firebird.main;
 
 import com.firebird.monster.MonsterInfomation;
 import com.firebird.monster.MonsterSkill;
+import com.firebird.monster.SimpleMonsterType;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -26,6 +27,16 @@ public class Application {
             System.out.println(skills[i - 1].getSkillName() + "로 " + skills[i - 1].getSkillDamage() + "데미지를 주었습니다.");
         } else {
             System.out.println("스킬이 null입니다.");
+        }
+
+        SimpleMonsterType dragon = monsterInformation.getMonsterType()[0]; //드래곤 불러오기
+        SimpleMonsterType oak = monsterInformation.getMonsterType()[1]; //오크 불러오기
+        SimpleMonsterType wizard = monsterInformation.getMonsterType()[2]; //마법사 불러오기
+
+        if (dragon.getHP_M() <= 0) {
+            System.out.println(dragon.getName_M() + "을(를) 처치했습니다! " + dragon.getCoin() + "코인을 획득하였습니다.");
+        } else {
+            System.out.println(dragon.getName_M() + "의 남은 체력: " + dragon.getHP_M());
         }
     }
 }
