@@ -11,16 +11,19 @@ public class SimpleMonsterType {
     private int LV_M;        // 레벨
     private int coin;           //드랍 코인
 
+    private int exp;            //드랍 경험치
+
 
 
     // 생성자
-    public SimpleMonsterType(String name_M, int HP_M, int AD_M, int DF_M, int LV_M) {
+    public SimpleMonsterType(String name_M, int HP_M, int AD_M, int DF_M, int LV_M, int exp) {
         this.name_M = name_M;
         this.HP_M = HP_M;
         this.AD_M = AD_M;
         this.DF_M = DF_M;
         this.LV_M = LV_M;
         this.coin = new Random().nextInt(5) + 1;        //1~5 사이의 난수 발생
+        this.exp = exp;
     }
 
     public SimpleMonsterType() {
@@ -74,5 +77,9 @@ public class SimpleMonsterType {
     public void setCoin(int coin) {
         this.coin = coin;
     }
+
+    public int getExp() {return exp;}
+
+    public void setExp(int exp) {this.exp = exp;}
 }
 
