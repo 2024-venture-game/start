@@ -14,6 +14,28 @@ public class Application {
         monsterInformation.kindOfMonster();
         monsterInformation.kindOfSkill();
 
+        //예를 들어 Charactor 클래스를 참조하여 플레이어 코인을 저장하게 한다면
+        //Charactor charactor = new Charactor();   //60줄로 이동
+
+        //예시 Charactor 클래스
+        /*  public class Player {
+                private int coins; // 플레이어가 소유한 코인의 수
+
+                public Player() {
+                    this.coins = 0; // 초기 코인 수는 0으로 설정
+                }
+
+                public void addCoins(int coins) {
+                    this.coins += coins; // 코인 추가
+                }
+
+                public int getCoins() {
+                     return this.coins; // 현재 코인 수 반환
+                }
+            }
+            */
+
+
         // 스킬 정보 출력
         MonsterSkill[] skills = monsterInformation.getMonsterSkills();
 
@@ -35,6 +57,7 @@ public class Application {
 
         if (dragon.getHP_M() <= 0) {
             System.out.println(dragon.getName_M() + "을(를) 처치했습니다! " + dragon.getCoin() + "코인을 획득하였습니다.");
+            //charactor.addCoins(monster.getCoin());       //
         } else {
             System.out.println(dragon.getName_M() + "의 남은 체력: " + dragon.getHP_M());
         }
