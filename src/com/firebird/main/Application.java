@@ -92,7 +92,7 @@ public class Application {
                         break;
                 }
                 gameStart = true; // 게임 시작
-                startBattle(num2); // 전투 시작
+                startBattle(num); // 전투 시작
             } else if (num2 == 2) {
                 System.out.println("캐릭터를 다시 선택해주세요.");
                 continue; // 캐릭터 선택부터 다시 시작
