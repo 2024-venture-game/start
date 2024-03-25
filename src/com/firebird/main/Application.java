@@ -372,9 +372,9 @@ public class Application {
                         break;
                     }*/
                 }
-            } else {
+            } /*else {
                 System.out.println("레벨 부족으로 게임이 종료됩니다.");
-            }
+            }*/
 
             if(level == 3){     //=========================================================== 전사 Level3
 
@@ -638,6 +638,24 @@ public class Application {
                     System.out.println("대충 버그났다는 내용");
                 }
 
+                if (magicianHP <= 0) {
+                    System.out.println("");
+                    System.out.println("플레이어가 졌습니다. 게임 끝!");
+                    System.out.println("");
+                    System.out.println("#################################################################################################");
+                    System.out.println("#################################################################################################");
+                    System.out.println("        _/_/_/                                            _/_/                                 ");
+                    System.out.println("     _/          _/_/_/  _/_/_/  _/_/      _/_/        _/    _/  _/      _/    _/_/    _/  _/_/");
+                    System.out.println("    _/  _/_/  _/    _/  _/    _/    _/  _/_/_/_/      _/    _/  _/      _/  _/_/_/_/  _/_/     ");
+                    System.out.println("    _/  _/_/  _/    _/  _/    _/    _/  _/_/_/_/      _/    _/  _/      _/  _/_/_/_/  _/_/     ");
+                    System.out.println("   _/    _/  _/    _/  _/    _/    _/  _/            _/    _/    _/  _/    _/        _/         ");
+                    System.out.println("    _/_/_/    _/_/_/  _/    _/    _/    _/_/_/        _/_/        _/        _/_/_/  _/         ");
+                    System.out.println("#################################################################################################");
+                    System.out.println("#################################################################################################");
+                    break;
+                }
+
+
 
                 // 몬스터의 공격
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
@@ -759,6 +777,24 @@ public class Application {
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
+
+                    if (magicianHP <= 0) {
+                        System.out.println("");
+                        System.out.println("플레이어가 졌습니다. 게임 끝!");
+                        System.out.println("");
+                        System.out.println("#################################################################################################");
+                        System.out.println("#################################################################################################");
+                        System.out.println("        _/_/_/                                            _/_/                                 ");
+                        System.out.println("     _/          _/_/_/  _/_/_/  _/_/      _/_/        _/    _/  _/      _/    _/_/    _/  _/_/");
+                        System.out.println("    _/  _/_/  _/    _/  _/    _/    _/  _/_/_/_/      _/    _/  _/      _/  _/_/_/_/  _/_/     ");
+                        System.out.println("    _/  _/_/  _/    _/  _/    _/    _/  _/_/_/_/      _/    _/  _/      _/  _/_/_/_/  _/_/     ");
+                        System.out.println("   _/    _/  _/    _/  _/    _/    _/  _/            _/    _/    _/  _/    _/        _/         ");
+                        System.out.println("    _/_/_/    _/_/_/  _/    _/    _/    _/_/_/        _/_/        _/        _/_/_/  _/         ");
+                        System.out.println("#################################################################################################");
+                        System.out.println("#################################################################################################");
+                        break;
+                    }
+
 
                 }
             }
@@ -932,23 +968,6 @@ public class Application {
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                    if (magicianHP <= 0) {
-                        System.out.println("");
-                        System.out.println("플레이어가 졌습니다. 게임 끝!");
-                        System.out.println("");
-                        System.out.println("#################################################################################################");
-                        System.out.println("#################################################################################################");
-                        System.out.println("        _/_/_/                                            _/_/                                 ");
-                        System.out.println("     _/          _/_/_/  _/_/_/  _/_/      _/_/        _/    _/  _/      _/    _/_/    _/  _/_/");
-                        System.out.println("    _/  _/_/  _/    _/  _/    _/    _/  _/_/_/_/      _/    _/  _/      _/  _/_/_/_/  _/_/     ");
-                        System.out.println("    _/  _/_/  _/    _/  _/    _/    _/  _/_/_/_/      _/    _/  _/      _/  _/_/_/_/  _/_/     ");
-                        System.out.println("   _/    _/  _/    _/  _/    _/    _/  _/            _/    _/    _/  _/    _/        _/         ");
-                        System.out.println("    _/_/_/    _/_/_/  _/    _/    _/    _/_/_/        _/_/        _/        _/_/_/  _/         ");
-                        System.out.println("#################################################################################################");
-                        System.out.println("#################################################################################################");
-                        break;
-                    }
-
 
 //            System.out.println("플레이어 HP: " + playerHP);
 //            System.out.println("몬스터 HP: " + monsterHP);
@@ -1034,7 +1053,7 @@ public class Application {
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                    if (magicianHP <= 0) {        //!!!
+                    if (archerHP <= 0) {        //!!!
                         System.out.println("");
                         System.out.println("플레이어가 졌습니다. 게임 끝!");
                         System.out.println("");
@@ -1357,7 +1376,7 @@ public class Application {
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                    if (archerHP <= 0) {
+                    /*if (archerHP <= 0) {
                         System.out.println("");
                         System.out.println("플레이어가 졌습니다. 게임 끝!");
                         System.out.println("");
@@ -1373,7 +1392,7 @@ public class Application {
                         System.out.println("#################################################################################################");
                         break;
                     }
-
+*/
 
 //            System.out.println("플레이어 HP: " + playerHP);
 //            System.out.println("몬스터 HP: " + monsterHP);
