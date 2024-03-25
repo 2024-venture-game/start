@@ -262,9 +262,9 @@ public class Application {
                     System.out.println("'" + wizard.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
                     System.out.println("");
                     //                    System.out.println("여기 데미지 확인 구문");
-                    playerHP -= monsterSkills[i].getSkillDamage();
+                    magicianHP -= monsterSkills[i].getSkillDamage();
                     System.out.println("*********************");
-                    System.out.println("현재 플레이어의 체력은 " + playerHP + " 입니다.");
+                    System.out.println("현재 플레이어의 체력은 " + magicianHP + " 입니다.");
                     System.out.println("*********************");
                 }else{
                     System.out.println("대충 버그났다는 내용");
@@ -282,7 +282,7 @@ public class Application {
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                if (playerHP <= 0) {
+                if (magicianHP <= 0) {
                     System.out.println("");
                     System.out.println("플레이어가 졌습니다. 게임 끝!");
                     System.out.println("");
@@ -347,7 +347,7 @@ public class Application {
                     System.out.println("'" + wizard.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
                     System.out.println("");
                     //                    System.out.println("여기 데미지 확인 구문");
-                    playerHP -= monsterSkills[i].getSkillDamage();
+                    magicianHP -= monsterSkills[i].getSkillDamage();
                     System.out.println("*********************");
                     System.out.println("현재 플레이어의 체력은 " + magicianHP + " 입니다.");
                     System.out.println("*********************");
