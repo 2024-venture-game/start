@@ -3,7 +3,7 @@ package com.firebird.character;
 import java.util.Scanner;
 
 public class CharacterSelection {
-        public CharacterSelection(int HP_C, int AD_C, int DF_C, int LV_C) {
+        public CharacterSelection() {
         }
 
         public static character selectionChar() {
