@@ -1,6 +1,6 @@
 package com.firebird.skill;
 
-import com.firebird.monster.MonsterDragon;
+// import com.firebird.monster.MonsterDragon;
 
 import java.util.Scanner;
 
