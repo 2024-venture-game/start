@@ -4,11 +4,9 @@ import java.util.GregorianCalendar;
 import java.util.Random;
 import java.util.Scanner;
 
-import com.firebird.character.Archer;
-import com.firebird.character.Bandit;
-import com.firebird.character.Magician;
-import com.firebird.character.Warrior;
+import com.firebird.character.*;
 import com.firebird.monster.MonsterInfomation;
+import com.firebird.monster.MonsterSkill;
 import com.firebird.monster.SimpleMonsterType;
 
 import com.firebird.monster.MonsterInfomation;
@@ -164,7 +162,7 @@ public class Application {
         System.out.println("전투를 시작합니다.");
         Random rand = new Random();
 //        int monsterHP = rand.nextInt(100) + 1; // 몬스터의 체력을 랜덤으로 설정
-        int playerHP = 100; // 플레이어의 체력 초기화
+//        int playerHP = 100; // 플레이어의 체력 초기화
 
         SimpleMonsterType simpleMonsterType = new SimpleMonsterType();
 
@@ -173,6 +171,9 @@ public class Application {
         monsterInformation.kindOfMonster();
         monsterInformation.kindOfSkill();
 
+        MonsterSkill[] monsterSkills = monsterInformation.getMonsterSkills();
+
+        Random random = new Random();
 
         SimpleMonsterType dragon = monsterInformation.getMonsterType()[0]; // 드래곤 불러오기
         SimpleMonsterType oak = monsterInformation.getMonsterType()[1]; // 오크 불러오기
@@ -187,6 +188,9 @@ public class Application {
         SkillMagician magician = new SkillMagician();
         magician.kindOfCharacterSkill();
 
+        CharacterSelection characterSelection = new CharacterSelection();
+        Warrior ch_warrior = new Warrior(90, 20, 10, 1);
+
 
         System.out.println("");
         System.out.println("*************************************");
@@ -198,6 +202,7 @@ public class Application {
 
 
         int bossHP = wizard.getHP_M();
+        int playerHP = ch_warrior.HP_C;
 
         if(num == 1){
             while (true) {
@@ -244,8 +249,27 @@ public class Application {
 
 //            monsterHP -= damageDealt; // 몬스터의 체력 감소
 
+
+
+                int i = random.nextInt(monsterSkills.length);
+                if(skills[i] !=null){
+                    System.out.println("");
+                    System.out.println("'" + wizard.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
+                    System.out.println("");
+                    //                    System.out.println("여기 데미지 확인 구문");
+                    playerHP -= monsterSkills[i].getSkillDamage();
+                    System.out.println("*********************");
+                    System.out.println("현재 플레이어의 체력은 " + playerHP + " 입니다.");
+                    System.out.println("*********************");
+                }else{
+                    System.out.println("대충 버그났다는 내용");
+                }
+
+
                 if (bossHP <= 0) {
+                    System.out.println("");
                     System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                    System.out.println("");
                     break;
                 }
 
@@ -253,8 +277,10 @@ public class Application {
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                if (bossHP <= 0) {
+                if (playerHP <= 0) {
+                    System.out.println("");
                     System.out.println("플레이어가 졌습니다. 게임 끝!");
+                    System.out.println("");
                     break;
                 }
 
@@ -292,6 +318,10 @@ public class Application {
                 simpleMonsterType.setHP_M(wizard.getHP_M() - damageDealt);
                 System.out.println("현재" + wizard.getName_M() + "의 체력은" + wizard.getHP_M() + "입니다.");
                 System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
+
+
+
+
 
 //            monsterHP -= damageDealt; // 몬스터의 체력 감소
 
