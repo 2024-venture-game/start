@@ -49,34 +49,33 @@ public class Application {
             System.out.println("2. 아니오");
             int num2 = scanner.nextInt();
 
-            /* 캐릭터 설명 불러오기 */
-            switch (num) {
-                case 1:
-                    // 검사의 설명을 불러오기
-                    Warrior warrior = new Warrior(90, 20, 10, 1); // 예시 값
-                    warrior.introduce();
-                    break;
-                case 2:
-                    // 마법사의 설명을 불러오기
-                    Magician magician = new Magician(90, 10, 20, 1); // 예시 값
-                    magician.introduce();
-                    break;
-                case 3:
-                    // 궁수의 설명을 불러오기
-                    Archer archer = new Archer(80, 10, 15, 1); // 예시 값
-                    archer.introduce();
-                    break;
-                case 4:
-                    // 도적의 설명을 불러오기
-                    Bandit bandit = new Bandit(100, 10, 5, 1); // 예시 값
-                    bandit.introduce();
-                    break;
-                default:
-                    break;
-            }
-
             if (num2 == 1) {
                 System.out.println("게임을 시작합니다.");
+                /* 캐릭터 설명 불러오기 */
+                switch (num) {
+                    case 1:
+                        // 검사의 설명을 불러오기
+                        Warrior warrior = new Warrior(90, 20, 10, 1); // 예시 값
+                        warrior.introduce();
+                        break;
+                    case 2:
+                        // 마법사의 설명을 불러오기
+                        Magician magician = new Magician(90, 10, 20, 1); // 예시 값
+                        magician.introduce();
+                        break;
+                    case 3:
+                        // 궁수의 설명을 불러오기
+                        Archer archer = new Archer(80, 10, 15, 1); // 예시 값
+                        archer.introduce();
+                        break;
+                    case 4:
+                        // 도적의 설명을 불러오기
+                        Bandit bandit = new Bandit(100, 10, 5, 1); // 예시 값
+                        bandit.introduce();
+                        break;
+                    default:
+                        break;
+                }
                 gameStart = true; // 게임 시작
                 startBattle(num2); // 전투 시작
             } else if (num2 == 2) {
@@ -93,6 +92,7 @@ public class Application {
 
     private static void startBattle() {
         System.out.println("전투를 시작합니다.");
+        System.out.println("**************************");
         Random rand = new Random();
         int monsterHP = rand.nextInt(100) + 1; // 몬스터의 체력을 랜덤으로 설정
         int playerHP = 100; // 플레이어의 체력 초기화
