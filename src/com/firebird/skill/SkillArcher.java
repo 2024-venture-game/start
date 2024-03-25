@@ -20,7 +20,7 @@ public class SkillArcher {
     public void kindOfCharacterSkill(){
         characterSkills[0] = new CharacterSkill("기본 화살", -10);
         characterSkills[1] = new CharacterSkill("연속 화살", -15);
-        characterSkills[2] = new CharacterSkill(" 불 화살", -25);
+        characterSkills[2] = new CharacterSkill(" 불 화살", -1000);
 
     }
 
