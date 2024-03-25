@@ -623,7 +623,6 @@ public class Application {
                         System.out.println("");
                         System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
                         System.out.println("");
-                        break;
                         level++;
                         System.out.println("레벨이" + level + "레벨 되었습니다");
                         break;
