@@ -14,9 +14,9 @@ public class MonsterInfomation {
     }
 
     public void kindOfSkill(){
-        MS[0] = new MonsterSkill("스킬1", 100, 0);
-        MS[1] = new MonsterSkill("스킬2", 200, 50);
-        MS[2] = new MonsterSkill("스킬3", 300, 0);
+        MS[0] = new MonsterSkill("스킬1", 1, 0);
+        MS[1] = new MonsterSkill("스킬2", 2, 50);
+        MS[2] = new MonsterSkill("스킬3", 3, 0);
 
 
 //        //밑에 스킬 값이 null인지 확인하기 위한 for문
