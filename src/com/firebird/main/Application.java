@@ -216,8 +216,9 @@ public class Application {
 
                     if (wizardBossHP <= 0) {
                         System.out.println("");
-                        System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                        System.out.println("몬스터를 물리쳤습니다.");
                         System.out.println("");
+                        level++;
                         break;
                     }
 
@@ -232,8 +233,6 @@ public class Application {
                 } else {
                     System.out.println("대충 버그났다는 내용");
                 }
-
-
 
 
                 // 몬스터의 공격
@@ -270,7 +269,6 @@ public class Application {
                 while (true) {
 //                System.out.println("확인용");
                     CharacterSkill[] skills = warrior.getCharacterSkills();
-
 
 
                     System.out.println("어떤 스킬을 사용하시겠습니까?");
@@ -322,8 +320,9 @@ public class Application {
 
                         if (oakBossHP <= 0) {
                             System.out.println("");
-                            System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                            System.out.println("몬스터를 물리쳤습니다.");
                             System.out.println("");
+                            level++;
                             break;
                         }
 
@@ -340,31 +339,18 @@ public class Application {
                     }
 
 
-
-
-                    // 몬스터의 공격
-//            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
-//            playerHP -= monsterDamage; // 플레이어의 체력 감소
-
-                    if (warriorHP <= 0) {
+                    /*if (warriorHP <= 0) {
                         System.out.println("");
                         System.out.println("플레이어가 졌습니다. 게임 끝!");
                         System.out.println("");
                         level++;
                         System.out.println("레벨이" + level + "레벨 되었습니다");
                         break;
-                    }
-
-//            System.out.println("플레이어 HP: " + playerHP);
-//            System.out.println("몬스터 HP: " + monsterHP);
-
+                    }*/
                 }
-
-
             } else {
                 System.out.println("레벨 부족으로 게임이 종료됩니다.");
             }
-
 
 
         } else if (num == 2) {    //===================================== 마법사
@@ -426,7 +412,6 @@ public class Application {
                         System.out.println("레벨이" + level + "레벨 되었습니다");
                         break;
                     }
-
                     System.out.println("");
                     System.out.println("'" + wizard.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
                     System.out.println("");
@@ -444,12 +429,12 @@ public class Application {
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                if (magicianHP <= 0) {
+                /*if (magicianHP <= 0) {
                     System.out.println("");
                     System.out.println("플레이어가 졌습니다. 게임 끝!");
                     System.out.println("");
                     break;
-                }
+                }*/
 
 //            System.out.println("플레이어 HP: " + playerHP);
 //            System.out.println("몬스터 HP: " + monsterHP);
@@ -476,7 +461,6 @@ public class Application {
                     CharacterSkill[] skills = magician.getCharacterSkills();
 
 
-
                     System.out.println("어떤 스킬을 사용하시겠습니까?");
                     System.out.println("1." + skills[0].getSkill_name_C() + " 데미지 : " + skills[0].getSkill_damage_C());
                     System.out.println("2." + skills[1].getSkill_name_C() + " 데미지 : " + skills[1].getSkill_damage_C());
@@ -526,10 +510,12 @@ public class Application {
 
                         if (oakBossHP <= 0) {
                             System.out.println("");
-                            System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                            System.out.println("몬스터를 물리쳤습니다.");
                             System.out.println("");
+                            level++;
                             break;
                         }
+
                         System.out.println("");
                         System.out.println("'" + oak.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
                         System.out.println("");
@@ -542,139 +528,12 @@ public class Application {
                         System.out.println("대충 버그났다는 내용");
                     }
 
-
-                    // 몬스터의 공격
-//            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
-//            playerHP -= monsterDamage; // 플레이어의 체력 감소
-
-                    if (magicianHP <= 0) {
-                        System.out.println("");
-                        System.out.println("플레이어가 졌습니다. 게임 끝!");
-                        System.out.println("");
-                        break;
-                    }
-
-//            System.out.println("플레이어 HP: " + playerHP);
-//            System.out.println("몬스터 HP: " + monsterHP);
-
                 }
-
-            } else {
-                System.out.println("레벨 부족으로 게임이 종료됩니다.");
             }
-        }
-
-
-         else if (num == 3) { //============================================ 궁수
-            while (true) {
-//                System.out.println("확인용");
-                CharacterSkill[] skills = archer.getCharacterSkills();
-
-                System.out.println("어떤 스킬을 사용하시겠습니까?");
-                System.out.println("1." + skills[0].getSkill_name_C() + " 데미지 : " + skills[0].getSkill_damage_C());
-                System.out.println("2." + skills[1].getSkill_name_C() + " 데미지 : " + skills[1].getSkill_damage_C());
-                System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
-                Scanner scanner = new Scanner(System.in);
-                int skillNum = scanner.nextInt();
-
-
-                int damageDealt = 0; // 입힌 데미지 초기화
-
-                switch (skillNum) {
-                    case 1:
-                        damageDealt = skills[0].getSkill_damage_C(); // 스킬 1에 대한 데미지 설정
-                        break;
-                    case 2:
-                        damageDealt = skills[1].getSkill_damage_C();
-                        ; // 스킬 2에 대한 데미지 설정
-                        break;
-                    case 3:
-                        damageDealt = skills[2].getSkill_damage_C();
-                        ; // 스킬 3에 대한 데미지 설정
-                        break;
-                    default:
-                        System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
-                        continue; // 잘못된 입력 시 다시 반복문의 처음으로 돌아감
-                }
-
-//                System.out.println("데미지 확인용 출력문 :" + damageDealt);
-//                System.out.println("체력 확인문 : " + bossHP);
-
-                wizardBossHP += damageDealt;
-                System.out.println("");
-                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
-                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                System.out.println("");
-
-//                simpleMonsterType.setHP_M(bossHP + damageDealt);
-                System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + wizardBossHP + "' 입니다.");
-//                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
-
-//            monsterHP -= damageDealt; // 몬스터의 체력 감소
-
-
-                int i = random.nextInt(monsterSkills.length);
-                if (skills[i] != null) {
-
-                    if (wizardBossHP <= 0) {
-
-                        System.out.println("");
-                        System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
-                        System.out.println("");
-                        level++;
-                        System.out.println("레벨이" + level + "레벨 되었습니다");
-                        break;
-                    }
-                    System.out.println("");
-                    System.out.println("'" + wizard.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
-                    System.out.println("");
-                    //                    System.out.println("여기 데미지 확인 구문");
-                    archerHP -= monsterSkills[i].getSkillDamage();                      //!!!
-                    System.out.println("*********************");
-                    System.out.println("현재 플레이어의 체력은 " + archerHP + " 입니다.");   //!!!
-                    System.out.println("*********************");
-                } else {
-                    System.out.println("대충 버그났다는 내용");
-                }
-
-
-                // 몬스터의 공격
-//            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
-//            playerHP -= monsterDamage; // 플레이어의 체력 감소
-
-                if (archerHP <= 0) {        //!!!
-                    System.out.println("");
-                    System.out.println("플레이어가 졌습니다. 게임 끝!");
-                    System.out.println("");
-                    break;
-                }
-
-//            System.out.println("플레이어 HP: " + playerHP);
-//            System.out.println("몬스터 HP: " + monsterHP);
-
-            }
-            if (level == 2) {
-                System.out.println();
-                System.out.println("==================================");
-                System.out.println("다음 단계로 이동합니다!");
-                System.out.println("==================================");
-                System.out.println();
-
-                System.out.println("");
-                System.out.println("*************************************");
-                System.out.println(oak.getName_M() + "가 등장했습니다.");
-                System.out.println("전투를 시작합니다.");
-                System.out.println(oak.getName_M() + "의 현재 체력은 " + oak.getHP_M() + "입니다.");
-                System.out.println("*************************************");
-                System.out.println("");
-
-                //======================================= 전사
+            } else if (num == 3) { //============================================ 궁수
                 while (true) {
 //                System.out.println("확인용");
-                    CharacterSkill[] skills  = archer.getCharacterSkills();
-
-
+                    CharacterSkill[] skills = archer.getCharacterSkills();
 
                     System.out.println("어떤 스킬을 사용하시겠습니까?");
                     System.out.println("1." + skills[0].getSkill_name_C() + " 데미지 : " + skills[0].getSkill_damage_C());
@@ -706,7 +565,7 @@ public class Application {
 //                System.out.println("데미지 확인용 출력문 :" + damageDealt);
 //                System.out.println("체력 확인문 : " + bossHP);
 
-                    oakBossHP += damageDealt;
+                    wizardBossHP += damageDealt;
                     System.out.println("");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
@@ -714,7 +573,7 @@ public class Application {
                     System.out.println("");
 
 //                simpleMonsterType.setHP_M(bossHP + damageDealt);
-                    System.out.println("현재 『" + oak.getName_M() + "』 의 체력은 '" + oakBossHP + "' 입니다.");
+                    System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + wizardBossHP + "' 입니다.");
 //                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
 
 //            monsterHP -= damageDealt; // 몬스터의 체력 감소
@@ -723,19 +582,22 @@ public class Application {
                     int i = random.nextInt(monsterSkills.length);
                     if (skills[i] != null) {
 
-                        if (oakBossHP <= 0) {
+                        if (wizardBossHP <= 0) {
+
                             System.out.println("");
                             System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
                             System.out.println("");
+                            level++;
+                            System.out.println("레벨이" + level + "레벨 되었습니다");
                             break;
                         }
                         System.out.println("");
-                        System.out.println("'" + oak.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
+                        System.out.println("'" + wizard.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
                         System.out.println("");
                         //                    System.out.println("여기 데미지 확인 구문");
-                        archerHP -= monsterSkills[i].getSkillDamage();
+                        archerHP -= monsterSkills[i].getSkillDamage();                      //!!!
                         System.out.println("*********************");
-                        System.out.println("현재 플레이어의 체력은 " + archerHP + " 입니다.");
+                        System.out.println("현재 플레이어의 체력은 " + archerHP + " 입니다.");   //!!!
                         System.out.println("*********************");
                     } else {
                         System.out.println("대충 버그났다는 내용");
@@ -746,7 +608,7 @@ public class Application {
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                    if (archerHP <= 0) {
+                    if (archerHP <= 0) {        //!!!
                         System.out.println("");
                         System.out.println("플레이어가 졌습니다. 게임 끝!");
                         System.out.println("");
@@ -757,131 +619,116 @@ public class Application {
 //            System.out.println("몬스터 HP: " + monsterHP);
 
                 }
+                if (level == 2) {
+                    System.out.println();
+                    System.out.println("==================================");
+                    System.out.println("다음 단계로 이동합니다!");
+                    System.out.println("==================================");
+                    System.out.println();
 
+                    System.out.println("");
+                    System.out.println("*************************************");
+                    System.out.println(oak.getName_M() + "가 등장했습니다.");
+                    System.out.println("전투를 시작합니다.");
+                    System.out.println(oak.getName_M() + "의 현재 체력은 " + oak.getHP_M() + "입니다.");
+                    System.out.println("*************************************");
+                    System.out.println("");
 
-            } else {
-                System.out.println("레벨 부족으로 게임이 종료됩니다.");
-            }
-        }
-
-
-        else if (num == 4) {     //===================================== 도적
-
-            while (true) {
+                    //======================================= 전사
+                    while (true) {
 //                System.out.println("확인용");
-                CharacterSkill[] skills = bandit.getCharacterSkills();
-
-                System.out.println("어떤 스킬을 사용하시겠습니까?");
-                System.out.println("1." + skills[0].getSkill_name_C() + " 데미지 : " + skills[0].getSkill_damage_C());
-                System.out.println("2." + skills[1].getSkill_name_C() + " 데미지 : " + skills[1].getSkill_damage_C());
-                System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
-                Scanner scanner = new Scanner(System.in);
-                int skillNum = scanner.nextInt();
+                        CharacterSkill[] skills = archer.getCharacterSkills();
 
 
-                int damageDealt = 0; // 입힌 데미지 초기화
+                        System.out.println("어떤 스킬을 사용하시겠습니까?");
+                        System.out.println("1." + skills[0].getSkill_name_C() + " 데미지 : " + skills[0].getSkill_damage_C());
+                        System.out.println("2." + skills[1].getSkill_name_C() + " 데미지 : " + skills[1].getSkill_damage_C());
+                        System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
+                        Scanner scanner = new Scanner(System.in);
+                        int skillNum = scanner.nextInt();
 
-                switch (skillNum) {
-                    case 1:
-                        damageDealt = skills[0].getSkill_damage_C(); // 스킬 1에 대한 데미지 설정
-                        break;
-                    case 2:
-                        damageDealt = skills[1].getSkill_damage_C();
-                        ; // 스킬 2에 대한 데미지 설정
-                        break;
-                    case 3:
-                        damageDealt = skills[2].getSkill_damage_C();
-                        ; // 스킬 3에 대한 데미지 설정
-                        break;
-                    default:
-                        System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
-                        continue; // 잘못된 입력 시 다시 반복문의 처음으로 돌아감
-                }
+
+                        int damageDealt = 0; // 입힌 데미지 초기화
+
+                        switch (skillNum) {
+                            case 1:
+                                damageDealt = skills[0].getSkill_damage_C(); // 스킬 1에 대한 데미지 설정
+                                break;
+                            case 2:
+                                damageDealt = skills[1].getSkill_damage_C();
+                                ; // 스킬 2에 대한 데미지 설정
+                                break;
+                            case 3:
+                                damageDealt = skills[2].getSkill_damage_C();
+                                ; // 스킬 3에 대한 데미지 설정
+                                break;
+                            default:
+                                System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
+                                continue; // 잘못된 입력 시 다시 반복문의 처음으로 돌아감
+                        }
 
 //                System.out.println("데미지 확인용 출력문 :" + damageDealt);
 //                System.out.println("체력 확인문 : " + bossHP);
 
-                wizardBossHP += damageDealt;
-                System.out.println("");
-                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
-                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                System.out.println("");
+                        oakBossHP += damageDealt;
+                        System.out.println("");
+                        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                        System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                        System.out.println("");
 
 //                simpleMonsterType.setHP_M(bossHP + damageDealt);
-                System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + wizardBossHP + "' 입니다.");
+                        System.out.println("현재 『" + oak.getName_M() + "』 의 체력은 '" + oakBossHP + "' 입니다.");
 //                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
 
 //            monsterHP -= damageDealt; // 몬스터의 체력 감소
 
 
-                int i = random.nextInt(monsterSkills.length);
-                if (skills[i] != null) {
-                    if (wizardBossHP <= 0) {
-                        System.out.println("");
-                        System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
-                        System.out.println("");
-//                    break;
-                        level++;
-                        System.out.println("레벨이" + level + "레벨 되었습니다");
-                        break;
-                    }
-                    System.out.println("");
-                    System.out.println("'" + wizard.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
-                    System.out.println("");
-                    //                    System.out.println("여기 데미지 확인 구문");
-                    banditHP -= monsterSkills[i].getSkillDamage();                      //!!!
-                    System.out.println("*********************");
-                    System.out.println("현재 플레이어의 체력은 " + banditHP + " 입니다.");   //!!!
-                    System.out.println("*********************");
-                } else {
-                    System.out.println("대충 버그났다는 내용");
-                }
+                        int i = random.nextInt(monsterSkills.length);
+                        if (skills[i] != null) {
+
+                            if (oakBossHP <= 0) {
+                                System.out.println("");
+                                System.out.println("몬스터를 물리쳤습니다.");
+                                System.out.println("");
+                                break;
+                            }
+                            System.out.println("");
+                            System.out.println("'" + oak.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
+                            System.out.println("");
+                            //                    System.out.println("여기 데미지 확인 구문");
+                            archerHP -= monsterSkills[i].getSkillDamage();
+                            System.out.println("*********************");
+                            System.out.println("현재 플레이어의 체력은 " + archerHP + " 입니다.");
+                            System.out.println("*********************");
+                        } else {
+                            System.out.println("대충 버그났다는 내용");
+                        }
 
 
-
-
-                // 몬스터의 공격
+                        // 몬스터의 공격
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                if (banditHP <= 0) {        //!!!
-                    System.out.println("");
-                    System.out.println("플레이어가 졌습니다. 게임오버!");
-                    System.out.println("");
-                    break;
-                }
+                        if (archerHP <= 0) {
+                            System.out.println("");
+                            System.out.println("플레이어가 졌습니다. 게임 끝!");
+                            System.out.println("");
+                            break;
+                        }
 
 //            System.out.println("플레이어 HP: " + playerHP);
 //            System.out.println("몬스터 HP: " + monsterHP);
 
-            }
-            if (level == 2) {
-
-                System.out.println();
-                System.out.println("==================================");
-                System.out.println("10초 후에 다음 단계로 이동합니다!");
-                System.out.println("==================================");
-                System.out.println();
+                    }
 
 
-                System.out.println("");
-                System.out.println("*************************************");
-                System.out.println(oak.getName_M() + "가 등장했습니다.");
-                System.out.println("전투를 시작합니다.");
-                System.out.println(oak.getName_M() + "의 현재 체력은 " + oak.getHP_M() + "입니다.");
-                System.out.println("*************************************");
-                System.out.println("");
+                }
+            } else if (num == 4) {     //===================================== 도적
 
-                //======================================= 전사
                 while (true) {
 //                System.out.println("확인용");
-<<<<<<< HEAD
-                        CharacterSkill[] skills = bandit.getCharacterSkills();
-=======
-                    CharacterSkill[] skills = warrior.getCharacterSkills();
->>>>>>> c8ede423adcd38a767be91021419be708027d150
-
+                    CharacterSkill[] skills = bandit.getCharacterSkills();
 
                     System.out.println("어떤 스킬을 사용하시겠습니까?");
                     System.out.println("1." + skills[0].getSkill_name_C() + " 데미지 : " + skills[0].getSkill_damage_C());
@@ -913,7 +760,7 @@ public class Application {
 //                System.out.println("데미지 확인용 출력문 :" + damageDealt);
 //                System.out.println("체력 확인문 : " + bossHP);
 
-                    oakBossHP += damageDealt;
+                    wizardBossHP += damageDealt;
                     System.out.println("");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
@@ -921,13 +768,117 @@ public class Application {
                     System.out.println("");
 
 //                simpleMonsterType.setHP_M(bossHP + damageDealt);
-                    System.out.println("현재 『" + oak.getName_M() + "』 의 체력은 '" + oakBossHP + "' 입니다.");
+                    System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + wizardBossHP + "' 입니다.");
 //                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
 
 //            monsterHP -= damageDealt; // 몬스터의 체력 감소
 
 
-<<<<<<< HEAD
+                    int i = random.nextInt(monsterSkills.length);
+                    if (skills[i] != null) {
+                        if (wizardBossHP <= 0) {
+                            System.out.println("");
+                            System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                            System.out.println("");
+//                    break;
+                            level++;
+                            System.out.println("레벨이" + level + "레벨 되었습니다");
+                            break;
+                        }
+                        System.out.println("");
+                        System.out.println("'" + wizard.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
+                        System.out.println("");
+                        //                    System.out.println("여기 데미지 확인 구문");
+                        banditHP -= monsterSkills[i].getSkillDamage();                      //!!!
+                        System.out.println("*********************");
+                        System.out.println("현재 플레이어의 체력은 " + banditHP + " 입니다.");   //!!!
+                        System.out.println("*********************");
+                    } else {
+                        System.out.println("대충 버그났다는 내용");
+                    }
+
+
+                    // 몬스터의 공격
+//            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
+//            playerHP -= monsterDamage; // 플레이어의 체력 감소
+
+                    if (banditHP <= 0) {        //!!!
+                        System.out.println("");
+                        System.out.println("플레이어가 졌습니다. 게임오버!");
+                        System.out.println("");
+                        break;
+                    }
+
+//            System.out.println("플레이어 HP: " + playerHP);
+//            System.out.println("몬스터 HP: " + monsterHP);
+
+                }
+                if (level == 2) {
+
+                    System.out.println();
+                    System.out.println("==================================");
+                    System.out.println("10초 후에 다음 단계로 이동합니다!");
+                    System.out.println("==================================");
+                    System.out.println();
+
+
+                    System.out.println("");
+                    System.out.println("*************************************");
+                    System.out.println(oak.getName_M() + "가 등장했습니다.");
+                    System.out.println("전투를 시작합니다.");
+                    System.out.println(oak.getName_M() + "의 현재 체력은 " + oak.getHP_M() + "입니다.");
+                    System.out.println("*************************************");
+                    System.out.println("");
+
+                    //======================================= 전사
+                    while (true) {
+//                System.out.println("확인용");
+
+                        CharacterSkill[] skills = bandit.getCharacterSkills();
+
+                        System.out.println("어떤 스킬을 사용하시겠습니까?");
+                        System.out.println("1." + skills[0].getSkill_name_C() + " 데미지 : " + skills[0].getSkill_damage_C());
+                        System.out.println("2." + skills[1].getSkill_name_C() + " 데미지 : " + skills[1].getSkill_damage_C());
+                        System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
+                        Scanner scanner = new Scanner(System.in);
+                        int skillNum = scanner.nextInt();
+
+
+                        int damageDealt = 0; // 입힌 데미지 초기화
+
+                        switch (skillNum) {
+                            case 1:
+                                damageDealt = skills[0].getSkill_damage_C(); // 스킬 1에 대한 데미지 설정
+                                break;
+                            case 2:
+                                damageDealt = skills[1].getSkill_damage_C();
+                                ; // 스킬 2에 대한 데미지 설정
+                                break;
+                            case 3:
+                                damageDealt = skills[2].getSkill_damage_C();
+                                ; // 스킬 3에 대한 데미지 설정
+                                break;
+                            default:
+                                System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
+                                continue; // 잘못된 입력 시 다시 반복문의 처음으로 돌아감
+                        }
+
+//                System.out.println("데미지 확인용 출력문 :" + damageDealt);
+//                System.out.println("체력 확인문 : " + bossHP);
+
+                        oakBossHP += damageDealt;
+                        System.out.println("");
+                        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                        System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                        System.out.println("");
+
+//                simpleMonsterType.setHP_M(bossHP + damageDealt);
+                        System.out.println("현재 『" + oak.getName_M() + "』 의 체력은 '" + oakBossHP + "' 입니다.");
+//                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
+
+//            monsterHP -= damageDealt; // 몬스터의 체력 감소
+
                         int i = random.nextInt(monsterSkills.length);
                         if (skills[i] != null) {
 
@@ -935,6 +886,7 @@ public class Application {
                                 System.out.println("");
                                 System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
                                 System.out.println("");
+                                level++;
                                 break;
                             }
                             System.out.println("");
@@ -960,52 +912,50 @@ public class Application {
                             System.out.println("");
                             break;
                         }
-=======
-                    int i = random.nextInt(monsterSkills.length);
-                    if (skills[i] != null) {
-                        if (oakBossHP <= 0) {
+
+                        if (skills[i] != null) {
+                            if (oakBossHP <= 0) {
+                                System.out.println("");
+                                System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                                System.out.println("");
+                                level++;
+                                break;
+                            }
+
                             System.out.println("");
-                            System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                            System.out.println("'" + oak.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
+                            System.out.println("");
+                            //                    System.out.println("여기 데미지 확인 구문");
+                            banditHP -= monsterSkills[i].getSkillDamage();
+                            System.out.println("*********************");
+                            System.out.println("현재 플레이어의 체력은 " + banditHP + " 입니다.");
+                            System.out.println("*********************");
+                        } else {
+                            System.out.println("대충 버그났다는 내용");
+                        }
+
+
+                        // 몬스터의 공격
+//            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
+//            playerHP -= monsterDamage; // 플레이어의 체력 감소
+
+                        if (banditHP <= 0) {
+                            System.out.println("");
+                            System.out.println("플레이어가 졌습니다. 게임 끝!");
                             System.out.println("");
                             break;
                         }
 
-                        System.out.println("");
-                        System.out.println("'" + oak.getName_M() + "' 가 Player에게 " + monsterSkills[i].getSkillName() + " 으로" + monsterSkills[i].getSkillDamage() + " 데미지를 주었습니다.");
-                        System.out.println("");
-                        //                    System.out.println("여기 데미지 확인 구문");
-                        banditHP -= monsterSkills[i].getSkillDamage();
-                        System.out.println("*********************");
-                        System.out.println("현재 플레이어의 체력은 " + banditHP + " 입니다.");
-                        System.out.println("*********************");
-                    } else {
-                        System.out.println("대충 버그났다는 내용");
-                    }
-
-
-                    // 몬스터의 공격
-//            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
-//            playerHP -= monsterDamage; // 플레이어의 체력 감소
-
-                    if (banditHP <= 0) {
-                        System.out.println("");
-                        System.out.println("플레이어가 졌습니다. 게임 끝!");
-                        System.out.println("");
-                        break;
-                    }
->>>>>>> c8ede423adcd38a767be91021419be708027d150
 
 //            System.out.println("플레이어 HP: " + playerHP);
 //            System.out.println("몬스터 HP: " + monsterHP);
 
+                    }
+
+
                 }
-
-
-            } else {
-                System.out.println("레벨 부족으로 게임이 종료됩니다.");
             }
         }
-    }
 
    /* private static boolean askMoveOn(Scanner scanner) {
         System.out.println("다음 단계로 이동하시겠습니까? (y/n)");
@@ -1053,6 +1003,6 @@ public class Application {
 //    }
 //}
 //
-}
+    }
 
 
