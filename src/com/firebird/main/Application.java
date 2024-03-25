@@ -197,6 +197,7 @@ public class Application {
 
 
 
+        int bossHP = wizard.getHP_M();
 
         if(num == 1){
             while (true) {
@@ -208,6 +209,7 @@ public class Application {
                 System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                 Scanner scanner = new Scanner(System.in);
                 int skillNum = scanner.nextInt();
+
 
                 int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -227,15 +229,17 @@ public class Application {
                 }
 
                 System.out.println("데미지 확인용 출력문 :" + damageDealt);
-                System.out.println("체력 확인문 : " + wizard.getHP_M());
+                System.out.println("체력 확인문 : " + bossHP);
 
-                simpleMonsterType.setHP_M(wizard.getHP_M() + damageDealt);
-                System.out.println("현재" + wizard.getName_M() + "의 체력은" + wizard.getHP_M() + "입니다.");
+                bossHP += damageDealt;
+
+//                simpleMonsterType.setHP_M(bossHP + damageDealt);
+                System.out.println("현재" + wizard.getName_M() + "의 체력은" + bossHP + "입니다.");
                 System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
 
 //            monsterHP -= damageDealt; // 몬스터의 체력 감소
 
-                if (wizard.getHP_M() <= 0) {
+                if (bossHP <= 0) {
                     System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
                     break;
                 }
@@ -244,7 +248,7 @@ public class Application {
 //            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
 //            playerHP -= monsterDamage; // 플레이어의 체력 감소
 
-                if (playerHP <= 0) {
+                if (bossHP <= 0) {
                     System.out.println("플레이어가 졌습니다. 게임 끝!");
                     break;
                 }
