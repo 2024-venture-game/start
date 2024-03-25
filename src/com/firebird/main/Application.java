@@ -3,6 +3,11 @@ package com.firebird.main;
 import java.util.Random;
 import java.util.Scanner;
 
+//import com.firebird.character.Archer;
+//import com.firebird.character.Bandit;
+//import com.firebird.character.Magician;
+//import com.firebird.character.Warrior;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -15,7 +20,7 @@ public class Application {
             System.out.println("2. 마법사");
             System.out.println("3. 궁수");
             System.out.println("4. 도적");
-            System.out.println("선택할 캐릭터의 번호를 입력하세요: ");
+            System.out.print("선택할 캐릭터의 번호를 입력하세요: ");
             int num = scanner.nextInt();
 
             String characterName = "";
@@ -45,9 +50,35 @@ public class Application {
             int num2 = scanner.nextInt();
 
             /* 캐릭터 설명 불러오기 */
+            switch (num) {
+                case 1:
+                    // 검사의 설명을 불러오기
+//                    Warrior warrior = new Warrior(100, 50, 20, 1); // 예시 값
+//                    warrior.introduce();
+                    break;
+                case 2:
+                    // 마법사의 설명을 불러오기
+//                    Magician magician = new Magician(100, 50, 20, 1); // 예시 값
+//                    magician.introduce();
+                    break;
+                case 3:
+                    // 궁수의 설명을 불러오기
+//                    Archer archer = new Archer(100, 50, 20, 1); // 예시 값
+//                    archer.introduce();
+                    break;
+                case 4:
+                    // 도적의 설명을 불러오기
+//                    Bandit bandit = new Bandit(100, 50, 20, 1); // 예시 값
+//                    bandit.introduce();
+                    break;
+                default:
+                    break;
+            }
 
             if (num2 == 1) {
                 System.out.println("게임을 시작합니다.");
+                gameStart = true; // 게임 시작
+
 
                 /* 몬스터 설명 불러오기 */
 
@@ -100,9 +131,7 @@ public class Application {
                     System.out.println("플레이어 HP: " + playerHP);
                     System.out.println("몬스터 HP: " + monsterHP);
                 }
-
-                gameStart = true; // 게임 시작
-            } else if (num2 == 2) {
+            } else if (num ==2) {
                 System.out.println("캐릭터를 다시 선택해주십시오.");
             } else {
                 System.out.println("다시 숫자를 입력해주십시오.");
