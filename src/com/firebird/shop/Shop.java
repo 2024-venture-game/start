@@ -1,13 +1,14 @@
 package com.firebird.shop;
 
 import java.util.Scanner;
+import java.util.SimpleTimeZone;
 
 public class Shop {
 
-    private int coins;
+    private int coin;
 
-    public Shop(int coins) {
-        this.coins = coins;
+    public Shop(int coin) {
+        this.coin = coin;
     }
 
     public void itemSelect() {
@@ -31,30 +32,40 @@ public class Shop {
 
     public void buyItem(int itemNum) {
 
-        switch (itemNum) {
+        Scanner sc = new Scanner(System.in);
 
-            case 1 :
-                System.out.println("물약 : HP 회복");
-                break;
-            case 2:
-                System.out.println("갑옷 : 방어력 증가");
-                break;
-            case 3 :
-                System.out.println("독화살 : 궁수의 공격력 증가");
-                break;
-            case 4:
-                System.out.println("엑스칼리버 : 검사의 공격력 증가");
-                break;
-            case 5 :
-                System.out.println("묠니르 : 도적의 공격력 증가");
-                break;
-            case 6 :
-                System.out.println("딱총나무 지팡이 : 마법사 공격력 증가");
-                break;
-            default:
-                System.out.println("잘못된 번호입니다!");
+       String[] items = {"물약", "갑옷", "독화살","엑스칼리버","묠니르","딱총나무 지팡이"};
+       String[] descriptions = {"HP 회복", "방어력 증가", "궁수의 공격력 증가", "검사의 공격력 증가","도적의 공격력 증가","마법사 공격력 증가"};
 
-        }
+       int[] prices = {50,20,30,30,30,30};
+
+       if (itemNum < 1 || itemNum > items.length) {
+           System.out.println("잘못된 번호입니다. 다시 입력하세요! '◡'✿ ");
+           return;
+       }
+
+       int price = prices[itemNum  -1];     //선택한 아이템 가격
+       if (coin >= price) {
+           System.out.println("선택하신 " + items[itemNum - 1] + "은(는)" + price + "coin 입니다. " );
+
+           System.out.println("구매하시겠습니까? (Y/N)");
+           String ans = sc.nextLine();
+           if (ans.equalsIgnoreCase("Y")) {
+               coin -= price;
+               System.out.println("구매 완료! (*•̀ᴗ•́*)و 남은 코인 : " + coin);
+           } else {
+               System.out.println("구매 취소");
+           }
+       } else {
+           System.out.println("코인 부족");
+       }
     }
+           }
+
+
+
+
+
+
 
 }
