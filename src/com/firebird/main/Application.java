@@ -1,5 +1,6 @@
 package com.firebird.main;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Application {
@@ -43,30 +44,61 @@ public class Application {
             System.out.println("2. 아니오");
             int num2 = scanner.nextInt();
 
+            /* 캐릭터 설명 불러오기 */
+
             if (num2 == 1) {
                 System.out.println("게임을 시작합니다.");
 
+                /* 몬스터 설명 불러오기 */
+
                 System.out.println("전투를 시작합니다.");
 
+                Random rand = new Random();
+                int monsterHP = rand.nextInt(100) + 1; // 몬스터의 체력을 랜덤으로 설정
+                int playerHP = 100; // 플레이어의 체력 초기화
+
                 while (true) {
-                    System.out.println("전투를 진행하셨나요? (y/n)");
-                    String answer = scanner.next();
+                    System.out.println("어떤 스킬을 사용하시겠습니까?");
+                    System.out.println("1. 스킬 1");
+                    System.out.println("2. 스킬 2");
+                    System.out.println("3. 스킬 3");
+                    int skillNum = scanner.nextInt();
 
-                    if (answer.equalsIgnoreCase("y")) {
-                        System.out.println("Game over!");
-                        System.out.println("게임을 종료합니다.");
-                        break;
-                    } else if (answer.equalsIgnoreCase("n")) {
-                        System.out.println("Clear!");
-                        boolean moveOn = askMoveOn(scanner);
+                    int damageDealt = 0; // 입힌 데미지 초기화
 
-                        if (!moveOn) {
-                            System.out.println("게임 끝!");
+                    switch (skillNum) {
+                        case 1:
+                            damageDealt = 20; // 스킬 1에 대한 데미지 설정
                             break;
-                        }
-                    } else {
-                        System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
+                        case 2:
+                            damageDealt = 30; // 스킬 2에 대한 데미지 설정
+                            break;
+                        case 3:
+                            damageDealt = 40; // 스킬 3에 대한 데미지 설정
+                            break;
+                        default:
+                            System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
+                            continue; // 잘못된 입력 시 다시 반복문의 처음으로 돌아감
                     }
+
+                    monsterHP -= damageDealt; // 몬스터의 체력 감소
+
+                    if (monsterHP <= 0) {
+                        System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                        break;
+                    }
+
+                    // 몬스터의 공격
+                    int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
+                    playerHP -= monsterDamage; // 플레이어의 체력 감소
+
+                    if (playerHP <= 0) {
+                        System.out.println("플레이어가 졌습니다. 게임 끝!");
+                        break;
+                    }
+
+                    System.out.println("플레이어 HP: " + playerHP);
+                    System.out.println("몬스터 HP: " + monsterHP);
                 }
 
                 gameStart = true; // 게임 시작
