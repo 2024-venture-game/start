@@ -188,13 +188,13 @@ public class Application {
         magician.kindOfCharacterSkill();
 
 
-
+        System.out.println("");
         System.out.println("*************************************");
         System.out.println(wizard.getName_M() + "가 등장했습니다.");
         System.out.println("전투를 시작합니다.");
         System.out.println(wizard.getName_M() + "의 현재 체력은 " + wizard.getHP_M() + "입니다.");
         System.out.println("*************************************");
-
+        System.out.println("");
 
 
         int bossHP = wizard.getHP_M();
@@ -228,14 +228,19 @@ public class Application {
                         continue; // 잘못된 입력 시 다시 반복문의 처음으로 돌아감
                 }
 
-                System.out.println("데미지 확인용 출력문 :" + damageDealt);
-                System.out.println("체력 확인문 : " + bossHP);
+//                System.out.println("데미지 확인용 출력문 :" + damageDealt);
+//                System.out.println("체력 확인문 : " + bossHP);
 
                 bossHP += damageDealt;
+                System.out.println("");
+                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                System.out.println("");
 
 //                simpleMonsterType.setHP_M(bossHP + damageDealt);
-                System.out.println("현재" + wizard.getName_M() + "의 체력은" + bossHP + "입니다.");
-                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
+                System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + bossHP + "' 입니다.");
+//                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
 
 //            monsterHP -= damageDealt; // 몬스터의 체력 감소
 
