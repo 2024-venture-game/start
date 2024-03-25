@@ -105,58 +105,6 @@ public class Application {
         scanner.close();
     }
 
-    private static void startBattle() {
-        System.out.println("전투를 시작합니다.");
-        System.out.println("**************************");
-        Random rand = new Random();
-        int monsterHP = rand.nextInt(100) + 1; // 몬스터의 체력을 랜덤으로 설정
-        int playerHP = 100; // 플레이어의 체력 초기화
-
-        while (true) {
-            System.out.println("어떤 스킬을 사용하시겠습니까?");
-            System.out.println("1. 스킬 1");
-            System.out.println("2. 스킬 2");
-            System.out.println("3. 스킬 3");
-            Scanner scanner = new Scanner(System.in);
-            int skillNum = scanner.nextInt();
-
-            int damageDealt = 0; // 입힌 데미지 초기화
-
-            switch (skillNum) {
-                case 1:
-                    damageDealt = 20; // 스킬 1에 대한 데미지 설정
-                    break;
-                case 2:
-                    damageDealt = 30; // 스킬 2에 대한 데미지 설정
-                    break;
-                case 3:
-                    damageDealt = 40; // 스킬 3에 대한 데미지 설정
-                    break;
-                default:
-                    System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
-                    continue; // 잘못된 입력 시 다시 반복문의 처음으로 돌아감
-            }
-
-            monsterHP -= damageDealt; // 몬스터의 체력 감소
-
-            if (monsterHP <= 0) {
-                System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
-                break;
-            }
-
-            // 몬스터의 공격
-            int monsterDamage = rand.nextInt(20) + 1; // 몬스터의 데미지를 랜덤으로 설정
-            playerHP -= monsterDamage; // 플레이어의 체력 감소
-
-            if (playerHP <= 0) {
-                System.out.println("플레이어가 졌습니다. 게임 끝!");
-                break;
-            }
-
-            System.out.println("플레이어 HP: " + playerHP);
-            System.out.println("몬스터 HP: " + monsterHP);
-        }
-    }
 
     private static void startBattle(int num) {
         System.out.println("전투를 시작합니다.");
@@ -570,7 +518,7 @@ public class Application {
         }
     }
 
-    private static boolean askMoveOn(Scanner scanner) {
+   /* private static boolean askMoveOn(Scanner scanner) {
         System.out.println("다음 단계로 이동하시겠습니까? (y/n)");
         String answer = scanner.next();
 
@@ -593,7 +541,7 @@ public class Application {
             System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
             return askMoveOn(scanner);
         }
-    }
+    }*/
 }
 
 
