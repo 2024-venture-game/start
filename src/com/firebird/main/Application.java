@@ -20,7 +20,6 @@ public class Application {
     public static void main(String[] args) {
         boolean gameStart = false;
 
-
         while (!gameStart) {
             System.out.println("******게임 시작******");
             System.out.println("1. 검사");
@@ -29,7 +28,6 @@ public class Application {
             System.out.println("4. 도적");
             System.out.print("선택할 캐릭터의 번호를 입력하세요: ");
             int num = scanner.nextInt();
-
 
 //            Application gmChar = new Application();
 //            int num3 = gmChar.startBattle(num);
@@ -104,7 +102,7 @@ public class Application {
         scanner.close();
     }
 
-
+    /*====================== startBattle ======================*/
     private static void startBattle(int num) {
         System.out.println("전투를 시작합니다.");
         Random rand = new Random();
@@ -162,7 +160,7 @@ public class Application {
 
         int level = 1;  // 레벨 초기화
 
-        if (num == 1) {   //======================================= 전사
+        if (num == 1) {   //=========================================================== 전사 Level1
             while (true) {
 //                System.out.println("확인용");
                 CharacterSkill[] skills = warrior.getCharacterSkills();
@@ -200,7 +198,7 @@ public class Application {
                 wizardBossHP += damageDealt;
                 System.out.println("");
                 System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                System.out.println("보스에게 " + damageDealt + " 데미지를 주었습니다.");
                 System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 System.out.println("");
 
@@ -250,12 +248,30 @@ public class Application {
 //            System.out.println("몬스터 HP: " + monsterHP);
 
             }
-            if (level == 2) {   //===================================== level2
+            if (level == 2) {   //=========================================================== 전사 Level2
                 System.out.println();
                 System.out.println("==================================");
-                System.out.println("다음 단계로 이동합니다!");
+                System.out.println("5초 후에 다음 단계로 이동합니다!");
                 System.out.println("==================================");
                 System.out.println();
+
+                try {
+                    Thread.sleep(5000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                System.out.println("#################################################################################################");
+                System.out.println("#################################################################################################");
+                System.out.println("    _/      _/                        _/            _/_/_/    _/                                 ");
+                System.out.println("   _/_/    _/    _/_/    _/    _/  _/_/_/_/      _/        _/_/_/_/    _/_/_/    _/_/_/    _/_/ ");
+                System.out.println("  _/  _/  _/  _/_/_/_/    _/_/      _/            _/_/      _/      _/    _/  _/    _/  _/_/_/_/");
+                System.out.println(" _/    _/_/  _/        _/    _/    _/                _/    _/      _/    _/  _/    _/  _/       ");
+                System.out.println("_/      _/    _/_/_/  _/    _/      _/_/      _/_/_/        _/_/    _/_/_/    _/_/_/    _/_/_/ ");
+                System.out.println("                                                                                 _/             ");
+                System.out.println("                                                                            _/_/               ");
+                System.out.println("#################################################################################################");
+                System.out.println("#################################################################################################");
 
                 System.out.println("");
                 System.out.println("*************************************");
@@ -265,11 +281,10 @@ public class Application {
                 System.out.println("*************************************");
                 System.out.println("");
 
-                //======================================= 전사
+                //=======================================
                 while (true) {
 //                System.out.println("확인용");
                     CharacterSkill[] skills = warrior.getCharacterSkills();
-
 
                     System.out.println("어떤 스킬을 사용하시겠습니까?");
                     System.out.println("1." + skills[0].getSkill_name_C() + " 데미지 : " + skills[0].getSkill_damage_C());
@@ -277,7 +292,6 @@ public class Application {
                     System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
-
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -304,7 +318,7 @@ public class Application {
                     oakBossHP += damageDealt;
                     System.out.println("");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                    System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                    System.out.println("보스에게 " + damageDealt + " 데미지를 주었습니다.");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("");
 
@@ -353,7 +367,7 @@ public class Application {
             }
 
 
-        } else if (num == 2) {    //===================================== 마법사
+        } else if (num == 2) {    //=========================================================== 마법사 Level1
             while (true) {
                 CharacterSkill[] skills = magician.getCharacterSkills();
 
@@ -363,7 +377,6 @@ public class Application {
                 System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                 Scanner scanner = new Scanner(System.in);
                 int skillNum = scanner.nextInt();
-
 
                 int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -390,7 +403,7 @@ public class Application {
                 wizardBossHP += damageDealt;
                 System.out.println("");
                 System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                System.out.println("보스에게 " + damageDealt + " 데미지를 주었습니다.");
                 System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 System.out.println("");
 
@@ -406,10 +419,10 @@ public class Application {
 
                     if (wizardBossHP <= 0) {
                         System.out.println("");
-                        System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                        System.out.println("몬스터를 물리쳤습니다.");
                         System.out.println("");
                         level++;
-                        System.out.println("레벨이" + level + "레벨 되었습니다");
+                        System.out.println("레벨이 " + level + " 레벨 되었습니다");
                         break;
                     }
                     System.out.println("");
@@ -440,12 +453,30 @@ public class Application {
 //            System.out.println("몬스터 HP: " + monsterHP);
 
             }
-            if (level == 2) {
+            if (level == 2) {       //=========================================================== 마법사 Level2
                 System.out.println();
                 System.out.println("==================================");
-                System.out.println("다음 단계로 이동합니다!");
+                System.out.println("5초 후에 다음 단계로 이동합니다!");
                 System.out.println("==================================");
                 System.out.println();
+
+                try {
+                    Thread.sleep(5000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                System.out.println("#################################################################################################");
+                System.out.println("#################################################################################################");
+                System.out.println("    _/      _/                        _/            _/_/_/    _/                                 ");
+                System.out.println("   _/_/    _/    _/_/    _/    _/  _/_/_/_/      _/        _/_/_/_/    _/_/_/    _/_/_/    _/_/ ");
+                System.out.println("  _/  _/  _/  _/_/_/_/    _/_/      _/            _/_/      _/      _/    _/  _/    _/  _/_/_/_/");
+                System.out.println(" _/    _/_/  _/        _/    _/    _/                _/    _/      _/    _/  _/    _/  _/       ");
+                System.out.println("_/      _/    _/_/_/  _/    _/      _/_/      _/_/_/        _/_/    _/_/_/    _/_/_/    _/_/_/ ");
+                System.out.println("                                                                                 _/             ");
+                System.out.println("                                                                            _/_/               ");
+                System.out.println("#################################################################################################");
+                System.out.println("#################################################################################################");
 
                 System.out.println("");
                 System.out.println("*************************************");
@@ -455,7 +486,7 @@ public class Application {
                 System.out.println("*************************************");
                 System.out.println("");
 
-                //======================================= 마법사
+                //=======================================
                 while (true) {
 //                System.out.println("확인용");
                     CharacterSkill[] skills = magician.getCharacterSkills();
@@ -494,7 +525,7 @@ public class Application {
                     oakBossHP += damageDealt;
                     System.out.println("");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                    System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                    System.out.println("보스에게 " + damageDealt + " 데미지를 주었습니다.");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("");
 
@@ -530,7 +561,7 @@ public class Application {
 
                 }
             }
-            } else if (num == 3) { //============================================ 궁수
+            } else if (num == 3) {          //=========================================================== 궁수 Level1
                 while (true) {
 //                System.out.println("확인용");
                     CharacterSkill[] skills = archer.getCharacterSkills();
@@ -568,7 +599,7 @@ public class Application {
                     wizardBossHP += damageDealt;
                     System.out.println("");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                    System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                    System.out.println("보스에게 " + damageDealt + " 데미지를 주었습니다.");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("");
 
@@ -585,10 +616,10 @@ public class Application {
                         if (wizardBossHP <= 0) {
 
                             System.out.println("");
-                            System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                            System.out.println("몬스터를 물리쳤습니다.");
                             System.out.println("");
                             level++;
-                            System.out.println("레벨이" + level + "레벨 되었습니다");
+                            System.out.println("레벨이 " + level + " 레벨 되었습니다");
                             break;
                         }
                         System.out.println("");
@@ -619,12 +650,30 @@ public class Application {
 //            System.out.println("몬스터 HP: " + monsterHP);
 
                 }
-                if (level == 2) {
+                if (level == 2) {           //=========================================================== 궁수 Level2
                     System.out.println();
                     System.out.println("==================================");
-                    System.out.println("다음 단계로 이동합니다!");
+                    System.out.println("5초 후에 다음 단계로 이동합니다!");
                     System.out.println("==================================");
                     System.out.println();
+
+                    try {
+                        Thread.sleep(5000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    System.out.println("#################################################################################################");
+                    System.out.println("#################################################################################################");
+                    System.out.println("    _/      _/                        _/            _/_/_/    _/                                 ");
+                    System.out.println("   _/_/    _/    _/_/    _/    _/  _/_/_/_/      _/        _/_/_/_/    _/_/_/    _/_/_/    _/_/ ");
+                    System.out.println("  _/  _/  _/  _/_/_/_/    _/_/      _/            _/_/      _/      _/    _/  _/    _/  _/_/_/_/");
+                    System.out.println(" _/    _/_/  _/        _/    _/    _/                _/    _/      _/    _/  _/    _/  _/       ");
+                    System.out.println("_/      _/    _/_/_/  _/    _/      _/_/      _/_/_/        _/_/    _/_/_/    _/_/_/    _/_/_/ ");
+                    System.out.println("                                                                                 _/             ");
+                    System.out.println("                                                                            _/_/               ");
+                    System.out.println("#################################################################################################");
+                    System.out.println("#################################################################################################");
 
                     System.out.println("");
                     System.out.println("*************************************");
@@ -634,7 +683,7 @@ public class Application {
                     System.out.println("*************************************");
                     System.out.println("");
 
-                    //======================================= 전사
+                    //=======================================
                     while (true) {
 //                System.out.println("확인용");
                         CharacterSkill[] skills = archer.getCharacterSkills();
@@ -673,7 +722,7 @@ public class Application {
                         oakBossHP += damageDealt;
                         System.out.println("");
                         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                        System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                        System.out.println("보스에게 " + damageDealt + " 데미지를 주었습니다.");
                         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                         System.out.println("");
 
@@ -724,7 +773,7 @@ public class Application {
 
 
                 }
-            } else if (num == 4) {     //===================================== 도적
+            } else if (num == 4) {     //=========================================================== 도적 Level1
 
                 while (true) {
 //                System.out.println("확인용");
@@ -763,7 +812,7 @@ public class Application {
                     wizardBossHP += damageDealt;
                     System.out.println("");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                    System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                    System.out.println("보스에게 " + damageDealt + " 데미지를 주었습니다.");
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("");
 
@@ -778,11 +827,11 @@ public class Application {
                     if (skills[i] != null) {
                         if (wizardBossHP <= 0) {
                             System.out.println("");
-                            System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                            System.out.println("몬스터를 물리쳤습니다.");
                             System.out.println("");
 //                    break;
                             level++;
-                            System.out.println("레벨이" + level + "레벨 되었습니다");
+                            System.out.println("레벨이 " + level + " 레벨 되었습니다");
                             break;
                         }
                         System.out.println("");
@@ -813,14 +862,31 @@ public class Application {
 //            System.out.println("몬스터 HP: " + monsterHP);
 
                 }
-                if (level == 2) {
+                if (level == 2) {           //=========================================================== 도적 Level2
 
                     System.out.println();
                     System.out.println("==================================");
-                    System.out.println("10초 후에 다음 단계로 이동합니다!");
+                    System.out.println("5초 후에 다음 단계로 이동합니다!");
                     System.out.println("==================================");
                     System.out.println();
 
+                    try {
+                        Thread.sleep(5000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    System.out.println("#################################################################################################");
+                    System.out.println("#################################################################################################");
+                    System.out.println("    _/      _/                        _/            _/_/_/    _/                                 ");
+                    System.out.println("   _/_/    _/    _/_/    _/    _/  _/_/_/_/      _/        _/_/_/_/    _/_/_/    _/_/_/    _/_/ ");
+                    System.out.println("  _/  _/  _/  _/_/_/_/    _/_/      _/            _/_/      _/      _/    _/  _/    _/  _/_/_/_/");
+                    System.out.println(" _/    _/_/  _/        _/    _/    _/                _/    _/      _/    _/  _/    _/  _/       ");
+                    System.out.println("_/      _/    _/_/_/  _/    _/      _/_/      _/_/_/        _/_/    _/_/_/    _/_/_/    _/_/_/ ");
+                    System.out.println("                                                                                 _/             ");
+                    System.out.println("                                                                            _/_/               ");
+                    System.out.println("#################################################################################################");
+                    System.out.println("#################################################################################################");
 
                     System.out.println("");
                     System.out.println("*************************************");
@@ -869,7 +935,7 @@ public class Application {
                         oakBossHP += damageDealt;
                         System.out.println("");
                         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                        System.out.println("보스에게" + damageDealt + "데미지를 주었습니다.");
+                        System.out.println("보스에게 " + damageDealt + " 데미지를 주었습니다.");
                         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                         System.out.println("");
 
@@ -884,7 +950,7 @@ public class Application {
 
                             if (oakBossHP <= 0) {
                                 System.out.println("");
-                                System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                                System.out.println("몬스터를 물리쳤습니다.");
                                 System.out.println("");
                                 level++;
                                 break;
@@ -916,7 +982,7 @@ public class Application {
                         if (skills[i] != null) {
                             if (oakBossHP <= 0) {
                                 System.out.println("");
-                                System.out.println("몬스터를 물리쳤습니다. 게임을 종료합니다.");
+                                System.out.println("몬스터를 물리쳤습니다.");
                                 System.out.println("");
                                 level++;
                                 break;
