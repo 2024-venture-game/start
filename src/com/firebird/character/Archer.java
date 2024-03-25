@@ -9,7 +9,7 @@ package com.firebird.character;
         public void introduce () {
 
             System.out.println("===================================================");
-            System.out.println("궁수를 선택하셨습니다!");
+            System.out.println("궁수를 선택하셨습니다! (҂`з´).っ︻デ═一");
             System.out.println("레벨 : " + LV_C);
             System.out.println("체력 : " + HP_C);
             System.out.println("공격력 : " + AD_C);
