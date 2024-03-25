@@ -8,6 +8,5 @@ public class Application1 {
         Magician mg = new Magician(100,50,20,1);
         mg.introduce();
 
-
     }
 }
