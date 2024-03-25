@@ -3,10 +3,10 @@ package com.firebird.main;
 import java.util.Random;
 import java.util.Scanner;
 
-//import com.firebird.character.Archer;
-//import com.firebird.character.Bandit;
-//import com.firebird.character.Magician;
-//import com.firebird.character.Warrior;
+import com.firebird.character.Archer;
+import com.firebird.character.Bandit;
+import com.firebird.character.Magician;
+import com.firebird.character.Warrior;
 
 public class Application {
 
@@ -53,23 +53,23 @@ public class Application {
             switch (num) {
                 case 1:
                     // 검사의 설명을 불러오기
-//                    Warrior warrior = new Warrior(100, 50, 20, 1); // 예시 값
-//                    warrior.introduce();
+                    Warrior warrior = new Warrior(90, 20, 10, 1); // 예시 값
+                    warrior.introduce();
                     break;
                 case 2:
                     // 마법사의 설명을 불러오기
-//                    Magician magician = new Magician(100, 50, 20, 1); // 예시 값
-//                    magician.introduce();
+                    Magician magician = new Magician(90, 10, 20, 1); // 예시 값
+                    magician.introduce();
                     break;
                 case 3:
                     // 궁수의 설명을 불러오기
-//                    Archer archer = new Archer(100, 50, 20, 1); // 예시 값
-//                    archer.introduce();
+                    Archer archer = new Archer(80, 10, 15, 1); // 예시 값
+                    archer.introduce();
                     break;
                 case 4:
                     // 도적의 설명을 불러오기
-//                    Bandit bandit = new Bandit(100, 50, 20, 1); // 예시 값
-//                    bandit.introduce();
+                    Bandit bandit = new Bandit(100, 10, 5, 1); // 예시 값
+                    bandit.introduce();
                     break;
                 default:
                     break;
