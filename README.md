@@ -33,14 +33,33 @@
 
 ---
 
-**3. 프로그램 기능**
+**3. 개발 과정**
 ---
+  **3-1 아이디어 회의** <br>
+     1. 로또  2. 회원관리  3. 일기장  4. 메모장  5. 환율 계산기  6. 턴제 게임
+  
+  **3-2 아이디어 구체화** <br>
+  <br>
+  <img src="https://github.com/javaFirstTeam/start/assets/59754350/018c16ba-32f8-4c99-8933-3b7e65c0ba9f" width="300" height="500"/>
 
 
-  **3-1 플로우차트 ** <br>
+  **3-3 플로우차트 생성** <br>
+  <br>
   <img src="https://github.com/javaFirstTeam/start/assets/59754350/308e758b-38d7-41f3-91a7-d68252bd459b" width="500" height="800"/>
 
-
+  **3-4 역할 분담** <br>
+          🍇 김민수<br>
+          -- Charactor Package 생성 후 4가지 캐릭터 생성(Warrior, Magician, Archer, Bandit)<br>
+          <br>
+          🍈 박세연<br>
+          -- Skill Package 생성 후 캐릭터(Warrior, Magician, Archer, Bandit)가 각각 사용할 스킬 구성<br>
+          <br>
+          🍉 심선우<br>
+          -- Main Application 구성<br>
+          <br>
+          🍊 안효준<br>
+          -- Monster Package 생성 후 3가지 보스 생성(dragon, oak, wizard), 보스가 사용할 스킬 생성<br>
+          <br>
   
 **4. 플레이 방식**
 ---
