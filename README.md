@@ -59,7 +59,7 @@
 
 ✔ 팀원 : 삼육대학교 컴퓨터공학부 [박세연](https://github.com/se-3-yeon)
 
-<img src="https://github.com/javaFirstTeam/start/assets/59754350/e43a1ea4-0ead-4214-81f4-73477cee0190" width="200" height="200"/>
+<img src="https://github.com/javaFirstTeam/start/assets/144655675/66e68094-1490-4833-b03f-d0b3ebc061c0" width="200" height="200"/>
 
 ✔ 팀원 : 삼육대학교 컴퓨터공학부 [김민수](https://github.com/moressangplease)
 
