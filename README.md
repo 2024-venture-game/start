@@ -35,6 +35,13 @@
 
 **3. 프로그램 기능**
 ---
+
+
+  **3-1 플로우차트 ** <br>
+  <img src="https://github.com/javaFirstTeam/start/assets/59754350/308e758b-38d7-41f3-91a7-d68252bd459b" width="500" height="800"/>
+
+
+  
 **4. 플레이 방식**
 ---
 
