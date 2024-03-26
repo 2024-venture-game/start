@@ -20,7 +20,7 @@ public class SkillBandit {
     public void kindOfCharacterSkill(){
         characterSkills[0] = new CharacterSkill("총🔫", -10);
         characterSkills[1] = new CharacterSkill("수류탄💣", -15);
-        characterSkills[2] = new CharacterSkill("창🔱", -1000);
+        characterSkills[2] = new CharacterSkill("창🔱", -25);
 
     }
 

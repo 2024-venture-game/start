@@ -32,6 +32,13 @@ public class Application {
                     "⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                     "⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
                     "⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n");
+
+            try {
+                Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
             System.out.println("1. 검사 🗡️");
             System.out.println("2. 마법사 🪄");
             System.out.println("3. 궁수 🏹");
@@ -149,6 +156,11 @@ public class Application {
         Archer ch_archer = new Archer(80, 10, 15, 1);
         Bandit ch_bandit = new Bandit(100, 10, 5, 1);
 
+        try {
+            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         System.out.println("");
         System.out.println("*************************************");
@@ -156,6 +168,12 @@ public class Application {
         System.out.println("전투를 시작합니다.");
         System.out.println(wizard.getName_M() + "의 현재 체력은 " + wizard.getHP_M() + "입니다.");
         System.out.println("*************************************");
+
+        try {
+            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
 
         int wizardBossHP = wizard.getHP_M();
@@ -195,6 +213,12 @@ public class Application {
                 System.out.println("*************************************");
                 System.out.println("");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
 
                 int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -226,6 +250,12 @@ public class Application {
                 System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + wizardBossHP + "' 입니다.");
 //                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
 
                 int i = random.nextInt(monsterSkills.length);
                 if (skills[i] != null) {
@@ -246,6 +276,13 @@ public class Application {
                     System.out.println("*********************");
                     System.out.println("현재 플레이어의 체력은 " + warriorHP + " 입니다.");
                     System.out.println("*********************");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                 } else {
                     System.out.println("대충 버그났다는 내용");
                 }
@@ -295,6 +332,12 @@ public class Application {
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(oak.getName_M() + "가 등장했습니다.");
@@ -302,6 +345,12 @@ public class Application {
                 System.out.println(oak.getName_M() + "의 현재 체력은 " + oak.getHP_M() + "입니다.");
                 System.out.println("*************************************");
                 System.out.println("");
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
 
                 while (true) {
@@ -329,6 +378,12 @@ public class Application {
                             "　　　　( /￣∪");
                     System.out.println("*************************************");
                     System.out.println("");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -359,6 +414,12 @@ public class Application {
                     System.out.println("현재 『" + oak.getName_M() + "』 의 체력은 '" + oakBossHP + "' 입니다.");
 //                System.out.println("현재 이 코드가 작동하는지 확인하는 구문");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
 
                     int i = random.nextInt(monsterSkills.length);
                     if (skills[i] != null) {
@@ -379,6 +440,12 @@ public class Application {
                         System.out.println("*********************");
                         System.out.println("현재 플레이어의 체력은 " + warriorHP + " 입니다.");
                         System.out.println("*********************");
+
+                        try {
+                            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
@@ -429,6 +496,12 @@ public class Application {
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(dragon.getName_M() + "가 등장했습니다.");
@@ -436,6 +509,12 @@ public class Application {
                 System.out.println(dragon.getName_M() + "의 현재 체력은 " + dragon.getHP_M() + "입니다.");
                 System.out.println("*************************************");
                 System.out.println("");
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
 
                 while (true) {
@@ -465,6 +544,12 @@ public class Application {
                     System.out.println("*************************************");
                     System.out.println("");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -493,6 +578,12 @@ public class Application {
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("");
                     System.out.println("현재 『" + dragon.getName_M() + "』 의 체력은 '" + dragonBossHP + "' 입니다.");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
 
                     int i = random.nextInt(monsterSkills.length);
@@ -524,6 +615,12 @@ public class Application {
                         System.out.println("*********************");
                         System.out.println("현재 플레이어의 체력은 " + warriorHP + " 입니다.");
                         System.out.println("*********************");
+
+                        try {
+                            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
@@ -588,6 +685,12 @@ public class Application {
                 System.out.println("*************************************");
                 System.out.println("");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 int damageDealt = 0; // 입힌 데미지 초기화
 
                 switch (skillNum) {
@@ -616,6 +719,12 @@ public class Application {
                 System.out.println("");
                 System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + wizardBossHP + "' 입니다.");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
 
                 int i = random.nextInt(monsterSkills.length);
                 if (skills[i] != null) {
@@ -636,6 +745,12 @@ public class Application {
                     System.out.println("*********************");
                     System.out.println("현재 플레이어의 체력은 " + magicianHP + " 입니다.");
                     System.out.println("*********************");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     System.out.println("대충 버그났다는 내용");
                 }
@@ -683,6 +798,12 @@ public class Application {
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(oak.getName_M() + "가 등장했습니다.");
@@ -690,6 +811,12 @@ public class Application {
                 System.out.println(oak.getName_M() + "의 현재 체력은 " + oak.getHP_M() + "입니다.");
                 System.out.println("*************************************");
                 System.out.println("");
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
                 //=======================================
                 while (true) {
@@ -718,6 +845,12 @@ public class Application {
                             "　　　　( /￣∪");
                     System.out.println("*************************************");
                     System.out.println("");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
 
                     int damageDealt = 0; // 입힌 데미지 초기화
@@ -748,6 +881,12 @@ public class Application {
                     System.out.println("");
                     System.out.println("현재 『" + oak.getName_M() + "』 의 체력은 '" + oakBossHP + "' 입니다.");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
 
                     int i = random.nextInt(monsterSkills.length);
                     if (skills[i] != null) {
@@ -768,6 +907,12 @@ public class Application {
                         System.out.println("*********************");
                         System.out.println("현재 플레이어의 체력은 " + magicianHP + " 입니다.");
                         System.out.println("*********************");
+
+                        try {
+                            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
@@ -820,6 +965,12 @@ public class Application {
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(dragon.getName_M() + "가 등장했습니다.");
@@ -827,6 +978,12 @@ public class Application {
                 System.out.println(dragon.getName_M() + "의 현재 체력은 " + dragon.getHP_M() + "입니다.");
                 System.out.println("*************************************");
                 System.out.println("");
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
                 //======================================= 전사
                 while (true) {
@@ -856,6 +1013,12 @@ public class Application {
                     System.out.println("*************************************");
                     System.out.println("");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -883,6 +1046,12 @@ public class Application {
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("");
                     System.out.println("현재 『" + dragon.getName_M() + "』 의 체력은 '" + dragonBossHP + "' 입니다.");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
 
                     int i = random.nextInt(monsterSkills.length);
@@ -916,6 +1085,12 @@ public class Application {
                         System.out.println("*********************");
                         System.out.println("현재 플레이어의 체력은 " + magicianHP + " 입니다.");
                         System.out.println("*********************");
+
+                        try {
+                            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
@@ -977,6 +1152,12 @@ public class Application {
                 System.out.println("*************************************");
                 System.out.println("");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
 
                 int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -1006,6 +1187,12 @@ public class Application {
                 System.out.println("");
                 System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + wizardBossHP + "' 입니다.");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
 
                 int i = random.nextInt(monsterSkills.length);
                 if (skills[i] != null) {
@@ -1027,6 +1214,12 @@ public class Application {
                     System.out.println("*********************");
                     System.out.println("현재 플레이어의 체력은 " + archerHP + " 입니다.");   //!!!
                     System.out.println("*********************");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     System.out.println("대충 버그났다는 내용");
                 }
@@ -1075,6 +1268,12 @@ public class Application {
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(oak.getName_M() + "가 등장했습니다.");
@@ -1111,6 +1310,12 @@ public class Application {
                     System.out.println("*************************************");
                     System.out.println("");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                     int damageDealt = 0; // 입힌 데미지 초기화
 
                     switch (skillNum) {
@@ -1139,6 +1344,12 @@ public class Application {
                     System.out.println("");
                     System.out.println("현재 『" + oak.getName_M() + "』 의 체력은 '" + oakBossHP + "' 입니다.");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
 
                     int i = random.nextInt(monsterSkills.length);
                     if (skills[i] != null) {
@@ -1158,6 +1369,12 @@ public class Application {
                         System.out.println("*********************");
                         System.out.println("현재 플레이어의 체력은 " + archerHP + " 입니다.");
                         System.out.println("*********************");
+
+                        try {
+                            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
@@ -1209,6 +1426,12 @@ public class Application {
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(dragon.getName_M() + "가 등장했습니다.");
@@ -1245,6 +1468,12 @@ public class Application {
                     System.out.println("*************************************");
                     System.out.println("");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -1274,6 +1503,11 @@ public class Application {
                     System.out.println("");
                     System.out.println("현재 『" + dragon.getName_M() + "』 의 체력은 '" + dragonBossHP + "' 입니다.");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
                     int i = random.nextInt(monsterSkills.length);
                     if (skills[i] != null) {
@@ -1305,6 +1539,12 @@ public class Application {
                         System.out.println("*********************");
                         System.out.println("현재 플레이어의 체력은 " + archerHP + " 입니다.");
                         System.out.println("*********************");
+
+                        try {
+                            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
@@ -1368,6 +1608,12 @@ public class Application {
                 System.out.println("*************************************");
                 System.out.println("");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
 
                 int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -1397,6 +1643,11 @@ public class Application {
                 System.out.println("");
                 System.out.println("현재 『" + wizard.getName_M() + "』 의 체력은 '" + wizardBossHP + "' 입니다.");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
                 int i = random.nextInt(monsterSkills.length);
                 if (skills[i] != null) {
@@ -1417,6 +1668,12 @@ public class Application {
                     System.out.println("*********************");
                     System.out.println("현재 플레이어의 체력은 " + banditHP + " 입니다.");   //!!!
                     System.out.println("*********************");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     System.out.println("대충 버그났다는 내용");
                 }
@@ -1466,6 +1723,12 @@ public class Application {
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(oak.getName_M() + "가 등장했습니다.");
@@ -1502,6 +1765,12 @@ public class Application {
                     System.out.println("*************************************");
                     System.out.println("");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -1531,6 +1800,11 @@ public class Application {
                     System.out.println("");
                     System.out.println("현재 『" + oak.getName_M() + "』 의 체력은 '" + oakBossHP + "' 입니다.");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
                     int i = random.nextInt(monsterSkills.length);
                     if (skills[i] != null) {
@@ -1550,6 +1824,11 @@ public class Application {
                         System.out.println("*********************");
                         System.out.println("현재 플레이어의 체력은 " + banditHP + " 입니다.");
                         System.out.println("*********************");
+                        try {
+                            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
@@ -1612,6 +1891,12 @@ public class Application {
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
 
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(dragon.getName_M() + "가 등장했습니다.");
@@ -1619,6 +1904,11 @@ public class Application {
                 System.out.println(dragon.getName_M() + "의 현재 체력은 " + dragon.getHP_M() + "입니다.");
                 System.out.println("*************************************");
                 System.out.println("");
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
                 //======================================= 전사
                 while (true) {
@@ -1648,6 +1938,11 @@ public class Application {
                     System.out.println("*************************************");
                     System.out.println("");
 
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -1676,6 +1971,12 @@ public class Application {
                     System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                     System.out.println("");
                     System.out.println("현재 『" + dragon.getName_M() + "』 의 체력은 '" + dragonBossHP + "' 입니다.");
+
+                    try {
+                        Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
 
                     int i = random.nextInt(monsterSkills.length);
@@ -1708,6 +2009,11 @@ public class Application {
                         System.out.println("*********************");
                         System.out.println("현재 플레이어의 체력은 " + banditHP + " 입니다.");
                         System.out.println("*********************");
+                        try {
+                            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     } else {
                         System.out.println("대충 버그났다는 내용");
                     }
