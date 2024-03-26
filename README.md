@@ -4,6 +4,7 @@
 불사조가 보스를 물리치며 탑을 오르는 게임, 불사조의 서막입니다!<br> 정해진 틀을 따라가며 점점 강해지는 몬스터를 처지하며 골드를 획득하고 마지막 보스를 처지하는 게임입니다. 🍀
 </div>
 
+---
 **목차**
 ---
 [1. 프로젝트 이름 및 주제](#1.-프로젝트-이름-및-주제) <br>
@@ -47,7 +48,7 @@
 ---
 <img src="https://github.com/javaFirstTeam/start/assets/59754350/e43a1ea4-0ead-4214-81f4-73477cee0190" width="200" height="200"/>
 
-✔ 팀장 :
+✔ 팀장 : 삼육대학교 인공지능융합학부 [심선우](https://github.com/k168ww)
 
 <img src="https://github.com/javaFirstTeam/start/assets/59754350/e43a1ea4-0ead-4214-81f4-73477cee0190" width="200" height="200"/>
 
