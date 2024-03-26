@@ -3,9 +3,7 @@ package com.firebird.main;
 import java.util.*;
 
 import com.firebird.character.*;
-import com.firebird.monster.MonsterInfomation;
-import com.firebird.monster.MonsterSkill;
-import com.firebird.monster.SimpleMonsterType;
+import com.firebird.monster.*;
 
 import com.firebird.monster.MonsterInfomation;
 import com.firebird.skill.*;
@@ -155,6 +153,16 @@ public class Application {
         Magician ch_magician = new Magician(90, 10, 20, 1);
         Archer ch_archer = new Archer(80, 10, 15, 1);
         Bandit ch_bandit = new Bandit(100, 10, 5, 1);
+
+        MonsterImage mi = new MonsterImage();
+
+        try {
+            Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        mi.wizardim();
 
         try {
             Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
@@ -338,6 +346,14 @@ public class Application {
                     e.printStackTrace();
                 }
 
+                mi.oakim();
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(oak.getName_M() + "가 등장했습니다.");
@@ -495,6 +511,14 @@ public class Application {
                 System.out.println("                                                                            _/_/               ");
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                mi.dragonim();
 
                 try {
                     Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
@@ -804,6 +828,14 @@ public class Application {
                     e.printStackTrace();
                 }
 
+                mi.oakim();
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(oak.getName_M() + "가 등장했습니다.");
@@ -964,6 +996,14 @@ public class Application {
                 System.out.println("                                                                            _/_/               ");
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                mi.dragonim();
 
                 try {
                     Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
@@ -1274,6 +1314,14 @@ public class Application {
                     e.printStackTrace();
                 }
 
+                mi.oakim();
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(oak.getName_M() + "가 등장했습니다.");
@@ -1432,6 +1480,13 @@ public class Application {
                     e.printStackTrace();
                 }
 
+                mi.dragonim();
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(dragon.getName_M() + "가 등장했습니다.");
@@ -1729,6 +1784,14 @@ public class Application {
                     e.printStackTrace();
                 }
 
+                mi.oakim();
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println("");
                 System.out.println("*************************************");
                 System.out.println(oak.getName_M() + "가 등장했습니다.");
@@ -1890,6 +1953,14 @@ public class Application {
                 System.out.println("                                                                            _/_/               ");
                 System.out.println("#################################################################################################");
                 System.out.println("#################################################################################################");
+
+                try {
+                    Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                mi.dragonim();
 
                 try {
                     Thread.sleep(2000); // InterruptedException을 발생시킬 수 있는 메서드
