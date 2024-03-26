@@ -10,11 +10,11 @@ package com.firebird.character;
 
             System.out.println("===================================================");
             System.out.println("[궁수🏹]를 선택하셨습니다! (҂`з´).っ︻デ═一");
-            System.out.println("[레벨] " + LV_C);
-            System.out.println("[체력] " + HP_C);
-            System.out.println("[공격력] " + AD_C);
-            System.out.println("[방어력] " + DF_C);
-            System.out.println("[전투 특성] 연속 공격, 원거리");
+            System.out.println("[레벨🌟] " + LV_C);
+            System.out.println("[체력🫙️] " + HP_C);
+            System.out.println("[공격력🎯] " + AD_C);
+            System.out.println("[방어력🛡️] " + DF_C);
+            System.out.println("[전투 특성⚔️] 연속 공격, 원거리");
             System.out.println("===================================================");
             System.out.println("적의 배후를 노리는 치명적 암살자...");
             System.out.println("활을 주무기로 다루며 특수 화살로 적을 공격합니다.");

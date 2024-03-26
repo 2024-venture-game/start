@@ -17,9 +17,9 @@ public class SkillMagician {
     }
 
     public void kindOfCharacterSkill(){
-        characterSkills[0] = new CharacterSkill("얼음 마법", -10);
-        characterSkills[1] = new CharacterSkill("번개 마법", -15);
-        characterSkills[2] = new CharacterSkill(" 불 마법", -1000);
+        characterSkills[0] = new CharacterSkill("얼음 마법❄️", -10);
+        characterSkills[1] = new CharacterSkill("번개 마법🌩️", -15);
+        characterSkills[2] = new CharacterSkill("불 마법🔥", -1000);
 
     }
 

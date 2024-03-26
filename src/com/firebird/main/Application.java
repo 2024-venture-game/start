@@ -69,12 +69,12 @@ public class Application {
 
 //            System.out.println(characterName + "가 선택되었습니다.");
             System.out.println("￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣");
-            System.out.println("|"   +(characterName)+ "가 선택되었습니다. 　　　　[－][口][×] |");
+            System.out.println("|"   +(characterName)+ "가 선택되었습니다. 　　　　      ");
             System.out.println("|￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|");
             System.out.println("|　          정말 이 캐릭터로 선택하시겠습니까?　　　       |");
-            System.out.println("|　　　　＿＿＿＿＿＿　　　　＿＿＿＿＿＿　　　　＿＿＿＿＿　　　|");
-            System.out.println("| 　　　｜1. 예　　|　　　 ｜2. 아니오｜ 　  | 1. 예  |　 　|");
-            System.out.println("|　　　　￣￣￣￣￣￣　　　　￣￣￣￣￣￣　　　　￣￣￣￣￣　　　|");
+            System.out.println("|　　　    　＿＿＿＿＿＿　　　　　　　　 ＿＿＿＿＿　　　     |");
+            System.out.println("| 　　　    ｜1. 예　　|　　　        ｜2. 아니오｜ 　   　|");
+            System.out.println("|　　　　    ￣￣￣￣￣￣　　　　　　　　 ￣￣￣￣￣　　　     |");
             System.out.println("￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣");
 //            System.out.println("1. 예");
 //            System.out.println("2. 아니오");
@@ -165,7 +165,6 @@ public class Application {
         System.out.println("전투를 시작합니다.");
         System.out.println(wizard.getName_M() + "의 현재 체력은 " + wizard.getHP_M() + "입니다.");
         System.out.println("*************************************");
-        System.out.println("");
 
 
         int wizardBossHP = wizard.getHP_M();
@@ -190,6 +189,20 @@ public class Application {
                 System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                 Scanner scanner = new Scanner(System.in);
                 int skillNum = scanner.nextInt();
+
+                System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                        "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                        "　　(っっ= っっ゜　휘익 휘익\n" +
+                        "　　 ヽ　　ノ\n" +
+                        "　　　( /￣∪");
+                System.out.println("");
+                System.out.println(".　　　　∧＿∧\n" +
+                        "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                        "　　　　(っΣ⊂≡⊂＝\n" +
+                        "　　　　/ 　　) 두다다다\n" +
+                        "　　　　( /￣∪");
+                System.out.println("*************************************");
+                System.out.println("");
 
 
                 int damageDealt = 0; // 입힌 데미지 초기화
@@ -321,6 +334,21 @@ public class Application {
                     System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
+
+                    System.out.println("*************************************");
+                    System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                            "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                            "　　(っっ= っっ゜　휘익 휘익\n" +
+                            "　　 ヽ　　ノ\n" +
+                            "　　　( /￣∪");
+                    System.out.println("");
+                    System.out.println(".　　　　∧＿∧\n" +
+                            "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                            "　　　　(っΣ⊂≡⊂＝\n" +
+                            "　　　　/ 　　) 두다다다\n" +
+                            "　　　　( /￣∪");
+                    System.out.println("*************************************");
+                    System.out.println("");
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -459,6 +487,21 @@ public class Application {
                     System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
+
+                    System.out.println("*************************************");
+                    System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                            "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                            "　　(っっ= っっ゜　휘익 휘익\n" +
+                            "　　 ヽ　　ノ\n" +
+                            "　　　( /￣∪");
+                    System.out.println("");
+                    System.out.println(".　　　　∧＿∧\n" +
+                            "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                            "　　　　(っΣ⊂≡⊂＝\n" +
+                            "　　　　/ 　　) 두다다다\n" +
+                            "　　　　( /￣∪");
+                    System.out.println("*************************************");
+                    System.out.println("");
 
 
                     int damageDealt = 0; // 입힌 데미지 초기화
@@ -599,6 +642,21 @@ public class Application {
                 Scanner scanner = new Scanner(System.in);
                 int skillNum = scanner.nextInt();
 
+                System.out.println("*************************************");
+                System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                        "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                        "　　(っっ= っっ゜　휘익 휘익\n" +
+                        "　　 ヽ　　ノ\n" +
+                        "　　　( /￣∪");
+                System.out.println("");
+                System.out.println(".　　　　∧＿∧\n" +
+                        "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                        "　　　　(っΣ⊂≡⊂＝\n" +
+                        "　　　　/ 　　) 두다다다\n" +
+                        "　　　　( /￣∪");
+                System.out.println("*************************************");
+                System.out.println("");
+
                 int damageDealt = 0; // 입힌 데미지 초기화
 
                 switch (skillNum) {
@@ -738,6 +796,21 @@ public class Application {
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
 
+                    System.out.println("*************************************");
+                    System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                            "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                            "　　(っっ= っっ゜　휘익 휘익\n" +
+                            "　　 ヽ　　ノ\n" +
+                            "　　　( /￣∪");
+                    System.out.println("");
+                    System.out.println(".　　　　∧＿∧\n" +
+                            "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                            "　　　　(っΣ⊂≡⊂＝\n" +
+                            "　　　　/ 　　) 두다다다\n" +
+                            "　　　　( /￣∪");
+                    System.out.println("*************************************");
+                    System.out.println("");
+
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -866,6 +939,21 @@ public class Application {
                     System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
+
+                    System.out.println("*************************************");
+                    System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                            "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                            "　　(っっ= っっ゜　휘익 휘익\n" +
+                            "　　 ヽ　　ノ\n" +
+                            "　　　( /￣∪");
+                    System.out.println("");
+                    System.out.println(".　　　　∧＿∧\n" +
+                            "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                            "　　　　(っΣ⊂≡⊂＝\n" +
+                            "　　　　/ 　　) 두다다다\n" +
+                            "　　　　( /￣∪");
+                    System.out.println("*************************************");
+                    System.out.println("");
 
 
                     int damageDealt = 0; // 입힌 데미지 초기화
@@ -1007,6 +1095,21 @@ public class Application {
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
 
+                    System.out.println("*************************************");
+                    System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                            "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                            "　　(っっ= っっ゜　휘익 휘익\n" +
+                            "　　 ヽ　　ノ\n" +
+                            "　　　( /￣∪");
+                    System.out.println("");
+                    System.out.println(".　　　　∧＿∧\n" +
+                            "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                            "　　　　(っΣ⊂≡⊂＝\n" +
+                            "　　　　/ 　　) 두다다다\n" +
+                            "　　　　( /￣∪");
+                    System.out.println("*************************************");
+                    System.out.println("");
+
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -1140,6 +1243,20 @@ public class Application {
                         Scanner scanner = new Scanner(System.in);
                         int skillNum = scanner.nextInt();
 
+                        System.out.println("*************************************");
+                        System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                                "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                                "　　(っっ= っっ゜　휘익 휘익\n" +
+                                "　　 ヽ　　ノ\n" +
+                                "　　　( /￣∪");
+                        System.out.println("");
+                        System.out.println(".　　　　∧＿∧\n" +
+                                "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                                "　　　　(っΣ⊂≡⊂＝\n" +
+                                "　　　　/ 　　) 두다다다\n" +
+                                "　　　　( /￣∪");
+                        System.out.println("*************************************");
+                        System.out.println("");
 
                         int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -1276,6 +1393,21 @@ public class Application {
                     System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
+
+                    System.out.println("*************************************");
+                    System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                            "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                            "　　(っっ= っっ゜　휘익 휘익\n" +
+                            "　　 ヽ　　ノ\n" +
+                            "　　　( /￣∪");
+                    System.out.println("");
+                    System.out.println(".　　　　∧＿∧\n" +
+                            "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                            "　　　　(っΣ⊂≡⊂＝\n" +
+                            "　　　　/ 　　) 두다다다\n" +
+                            "　　　　( /￣∪");
+                    System.out.println("*************************************");
+                    System.out.println("");
 
 
                     int damageDealt = 0; // 입힌 데미지 초기화
@@ -1433,6 +1565,21 @@ public class Application {
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
 
+                    System.out.println("*************************************");
+                    System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                            "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                            "　　(っっ= っっ゜　휘익 휘익\n" +
+                            "　　 ヽ　　ノ\n" +
+                            "　　　( /￣∪");
+                    System.out.println("");
+                    System.out.println(".　　　　∧＿∧\n" +
+                            "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                            "　　　　(っΣ⊂≡⊂＝\n" +
+                            "　　　　/ 　　) 두다다다\n" +
+                            "　　　　( /￣∪");
+                    System.out.println("*************************************");
+                    System.out.println("");
+
 
                     int damageDealt = 0; // 입힌 데미지 초기화
 
@@ -1565,6 +1712,21 @@ public class Application {
                         System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                         Scanner scanner = new Scanner(System.in);
                         int skillNum = scanner.nextInt();
+
+                        System.out.println("*************************************");
+                        System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                                "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                                "　　(っっ= っっ゜　휘익 휘익\n" +
+                                "　　 ヽ　　ノ\n" +
+                                "　　　( /￣∪");
+                        System.out.println("");
+                        System.out.println(".　　　　∧＿∧\n" +
+                                "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                                "　　　　(っΣ⊂≡⊂＝\n" +
+                                "　　　　/ 　　) 두다다다\n" +
+                                "　　　　( /￣∪");
+                        System.out.println("*************************************");
+                        System.out.println("");
 
 
                         int damageDealt = 0; // 입힌 데미지 초기화
@@ -1756,6 +1918,21 @@ public class Application {
                     System.out.println("3." + skills[2].getSkill_name_C() + " 데미지 : " + skills[2].getSkill_damage_C());
                     Scanner scanner = new Scanner(System.in);
                     int skillNum = scanner.nextInt();
+
+                    System.out.println("*************************************");
+                    System.out.println(".　 ∧＿＿∧ ＿∧\n" +
+                            "(（( ・ω・)三ω・)) 때려봐 때려봐~\n" +
+                            "　　(っっ= っっ゜　휘익 휘익\n" +
+                            "　　 ヽ　　ノ\n" +
+                            "　　　( /￣∪");
+                    System.out.println("");
+                    System.out.println(".　　　　∧＿∧\n" +
+                            "・;'.、(・ω(:;(⊂＝⊂≡\n" +
+                            "　　　　(っΣ⊂≡⊂＝\n" +
+                            "　　　　/ 　　) 두다다다\n" +
+                            "　　　　( /￣∪");
+                    System.out.println("*************************************");
+                    System.out.println("");
 
 
                     int damageDealt = 0; // 입힌 데미지 초기화

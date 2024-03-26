@@ -9,11 +9,11 @@ package com.firebird.character;
         public void introduce () {
             System.out.println("===================================================");
             System.out.println("[검사🗡️]를 선택하셨습니다!");
-            System.out.println("[레벨] " + LV_C);
-            System.out.println("[체력 : " + HP_C);
-            System.out.println("[공격력 " + AD_C);
-            System.out.println("[방어력] " + DF_C);
-            System.out.println("[전투 특성]  ");
+            System.out.println("[레벨🌟] " + LV_C);
+            System.out.println("[체력🫙] " + HP_C);
+            System.out.println("[공격력🎯] " + AD_C);
+            System.out.println("[방어력🛡️] " + DF_C);
+            System.out.println("[전투 특성⚔️]  ");
             System.out.println("===================================================");
             System.out.println("지옥 너머 낙원을 꿈꾸는 검은 들개...");
             System.out.println("공격 중심의 캐릭터로 적에게 막강한 데미지를 줄 수 있습니다.");

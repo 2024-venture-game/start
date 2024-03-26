@@ -18,9 +18,9 @@ public class SkillWarrior {
         kindOfCharacterSkill(); //
     }
     public void kindOfCharacterSkill(){
-        characterSkills[0] = new CharacterSkill("목검", -10);
-        characterSkills[1] = new CharacterSkill("장검", -15);
-        characterSkills[2] = new CharacterSkill("광선검", -1000);
+        characterSkills[0] = new CharacterSkill("목검⚔️", -10);
+        characterSkills[1] = new CharacterSkill("장검🤺", -15);
+        characterSkills[2] = new CharacterSkill("광선검⚡", -1000);
 
     }
 
