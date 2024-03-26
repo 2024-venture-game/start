@@ -11,6 +11,9 @@
 ---
 **1. 프로젝트 이름 및 주제**
 ---
+- 라이선스 ![Generic badge](https://img.shields.io/badge/license-MIT-green.svg)
+- 개발 환경 <img alt="" src ="https://img.shields.io/badge/IDE-VSCode-indianred">
+- 운영 체제 ![Generic badge](https://img.shields.io/badge/OS-windows,mac_os,ubuntu-blue.svg)
 
 : 턴제 게임 
 
@@ -29,3 +32,10 @@ gngn
 ---
 **5. 팀 소개**
 ---
+✔ 팀장 : 
+
+✔ 팀원 : 삼육대학교 컴퓨터공학부 [안효준](https://github.com/hyojunahn111)
+
+✔ 팀원 : 
+
+✔ 팀원 : 
