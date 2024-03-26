@@ -1,4 +1,5 @@
-## 불사조 🧨 
+## 불사조 🧨
+
 <div align="center">
 <img width="341" alt="firebird" src="https://github.com/javaFirstTeam/start/assets/124691590/7dddb847-4edf-4670-ac90-0283de85caa4">
 <h2>[2024] 콘솔 게임 제작 🎮</h2>
@@ -18,7 +19,8 @@
 **1. 프로젝트 이름 및 주제**
 ---
 - 프로젝트명 : 불사조의 서막 : 턴제 게임 
-- 개발 환경 <img alt="" src="https://img.shields.io/badge/IDE-java-007396?style=flat-square&logo=java&logoColor=white"/>
+- 개발 환경 : <img alt="" src="https://img.shields.io/badge/IDE-java-007396?style=flat-square&logo=java&logoColor=white"/>
+- 협업툴 : <img src="https://img.shields.io/badge/discord-5C2D91?style=flat-square&logoColor=white"/> <img src="https://img.shields.io/badge/notion-000000?style=flat-square&logoColor=white"/>
 
 
 
