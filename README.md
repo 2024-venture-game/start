@@ -11,7 +11,7 @@
 ---
 **1. 프로젝트 이름 및 주제**
 ---
-- 개발 환경 <img src="https://img.shields.io/badge/java-007396?style=flat-square&logo=java&logoColor=white"/>
+- 개발 환경 <img alt="" src="https://img.shields.io/badge/java-007396?style=flat-square&logo=java&logoColor=white"/>
 
 : 턴제 게임 
 
