@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="java-first-team:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/java_first_team_jar</output-path>
+    <root id="archive" name="java-first-team.jar">
+      <element id="module-output" name="java-first-team" />
+    </root>
+  </artifact>
+</component>
