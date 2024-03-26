@@ -11,7 +11,8 @@
 ---
 **1. 프로젝트 이름 및 주제**
 ---
-- 개발 환경 <img alt="" src="https://img.shields.io/badge/java-007396?style=flat-square&logo=java&logoColor=white"/>
+- 개발 환경 <img alt="" src="https://img.shields.io/badge/IDE-java-007396?style=flat-square&logo=java&logoColor=white"/>
+
 
 : 턴제 게임 
 
@@ -28,12 +29,24 @@ gngn
 ---
 **4. 플레이 방식**
 ---
+
+
 **5. 팀 소개**
 ---
-✔ 팀장 : 
+<img src="https://github.com/javaFirstTeam/start/assets/59754350/e43a1ea4-0ead-4214-81f4-73477cee0190" width="200" height="200"/>
+
+✔ 팀장 :
+
+<img src="https://github.com/javaFirstTeam/start/assets/59754350/e43a1ea4-0ead-4214-81f4-73477cee0190" width="200" height="200"/>
 
 ✔ 팀원 : 삼육대학교 컴퓨터공학부 [안효준](https://github.com/hyojunahn111)
 
-✔ 팀원 : 
+<img src="https://github.com/javaFirstTeam/start/assets/59754350/e43a1ea4-0ead-4214-81f4-73477cee0190" width="200" height="200"/>
 
 ✔ 팀원 : 
+
+<img src="https://github.com/javaFirstTeam/start/assets/59754350/e43a1ea4-0ead-4214-81f4-73477cee0190" width="200" height="200"/>
+
+✔ 팀원 : 
+
+
