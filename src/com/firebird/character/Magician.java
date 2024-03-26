@@ -9,7 +9,7 @@ public class Magician extends character {
 
     public void introduce () {
         System.out.println("===================================================");
-        System.out.println("[마법사]를 선택하셨습니다!");
+        System.out.println("[마법사🪄]를 선택하셨습니다!");
         System.out.println("[레벨] " + LV_C);
         System.out.println("[체력] " + HP_C);
         System.out.println("[공격력] " + AD_C);
