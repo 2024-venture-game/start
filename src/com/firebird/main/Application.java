@@ -37,10 +37,13 @@ public class Application {
                 e.printStackTrace();
             }
 
+            System.out.println("불사조의 서막에 오신 것을 환영합니다!");
+            System.out.println("===================================================");
             System.out.println("1. 검사 🗡️");
             System.out.println("2. 마법사 🪄");
             System.out.println("3. 궁수 🏹");
             System.out.println("4. 도적 🔫");
+            System.out.println("===================================================");
             System.out.print("선택할 캐릭터의 번호를 입력하세요: ");
             int num = scanner.nextInt();
 
