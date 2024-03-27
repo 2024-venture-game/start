@@ -2,7 +2,7 @@
 
 <div align="center">
 <img width="341" alt="firebird" src="https://github.com/javaFirstTeam/start/assets/124691590/7dddb847-4edf-4670-ac90-0283de85caa4">
-<h2>[2024] 콘솔 게임 제작 🎮</h2>
+<h2>[2024] 콘솔 게임(턴제게임) 제작 🎮</h2>
 불사조가 보스를 물리치며 탑을 오르는 게임, 불사조의 서막입니다!<br> 정해진 틀을 따라가며 점점 강해지는 몬스터를 처치하며 골드를 획득하고 마지막 보스를 물리치는 게임입니다. 🍀
 </div>
 
